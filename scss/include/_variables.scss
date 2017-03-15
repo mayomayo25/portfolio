@@ -1,0 +1,30 @@
+//  name   : _variables.scss
+//  writer : DaichiSeki
+//  date   : 2017/01/10〜
+//  色コードを格納した変数はここへ
+@charset "UTF-8";
+
+
+$key_color: #49b3ee;
+$key_color_hover: #65bdee;
+$accent_color: #eb6363;
+$color-white: #fff;
+$color-black: #000;
+
+
+//  ブレイクポイント
+// min-width
+$breakpoint-up: (
+  'sm': 'screen and (min-width: 500px)',
+  'md': 'screen and (min-width: 600px)',
+  'lg': 'screen and (min-width: 768px)',
+  'xl': 'screen and (min-width: 1000px)',
+) !default;
+
+// max-width
+$breakpoint-down: (
+  'sm': 'screen and (max-width: 499px)',
+  'md': 'screen and (max-width: 599px)',
+  'lg': 'screen and (max-width: 767px)',
+  'xl': 'screen and (max-width: 999px)',
+) !default;
