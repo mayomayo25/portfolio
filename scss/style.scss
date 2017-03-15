@@ -5,3 +5,288 @@
 
 @import "include/mixin";
 @import "include/variables";
+
+
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+
+    font-family: 'Meiryo','Open Sans', sans-serif;
+}
+
+
+.section {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+
+    .heading2 {
+        margin-top: 60px; //  .global_menuのheight
+        padding: 80px 0;
+        box-sizing: border-box;
+        text-align: center;
+        letter-spacing: 12px;
+        color: #222;
+        background-color: #eee;
+        @include font-size(36);
+    }
+}
+
+//  エディター風の導入部分
+.sec01 {
+    z-index: 5;
+
+    //  エディター部分の左側
+    .side {
+        position: absolute;
+        width: 200px;
+        height: 100%;
+        background-color: #333;
+        color: #ddd;
+
+        .list {
+            width: 100%;
+            height: 100%;
+            padding-top: 30px;
+            box-sizing: border-box;
+            font-size: 12px;
+            &__item {
+                margin-bottom: 5px;
+                @include middle-line(30);
+
+                .link {
+                    display: block;
+                    color: #ddd;
+                    &:hover {
+                        background-color: #484848;
+                        cursor: pointer;
+                    }
+                    .icon {
+                        width: 40px;
+                        text-align: right;
+                        float: left;
+                        &__image {
+                            width: 12px;
+                            height: auto;
+                        }
+                    }
+                }
+
+                .file_name {
+                    width: 160px;
+                    padding-left: 10px;
+                    box-sizing: border-box;
+                    float: left;
+                }
+            }//  .list__item
+
+            //  一階層下がったフォルダ
+            .indent {
+                .icon{
+                    padding-left: 17px;
+                }
+                .file_name {
+                    width: 143px;
+                }
+            }
+        }
+    }
+
+    //  エディター部分の右側
+    .code {
+        position: absolute;
+        left: 200px; //  .sideのwidth
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+        line-height: 1.8;
+        background-color: #23241f;
+
+        &__tab {
+            position: absolute;
+            width: 100%;
+            height: 40px;
+            background-color: #333;
+
+            .tab {
+                position: absolute;
+                top: 6px;
+                width: 200px;
+                padding-left: 30px;
+                border-left: 2px solid #5f8cf0;
+                border-radius: 2px 2px 0 0;
+                box-sizing: border-box;
+                font-size: 12px;
+                color: #ddd;
+                background-color: #23241f;
+                box-shadow:1px -1px 0px 1px #111;
+                -moz-box-shadow:1px -1px 0px 1px #111;
+                -webkit-box-shadow:1px -1px 0px 1px #111;
+                @include middle-line(34);
+            }
+        }
+
+        &__line {
+            position: absolute;
+            top: 40px; //  .code__tabのheight
+            overflow: hidden;
+            width: 70px;
+            height: 100%;
+            padding-top: 10px;
+            padding-right: 20px;
+            box-sizing: border-box;
+            text-align: right;
+            color: #7d7d7d;
+        }
+
+        &__main {
+            position: absolute;
+            top: 40px; //  .code__tabのheight
+            left: 70px; //  .code__lineのwidth
+            width: 100%;
+            height: 100%;
+            padding-top: 10px;
+            box-sizing: border-box;
+
+            code {
+                padding: 0;
+            }
+        }
+    }//  .code
+
+    .global_menu {
+        position: absolute;
+        bottom: -60px;
+        width: 100%;
+        color: #ddd;
+        background-color: #444;
+        box-shadow:0px 3px 10px -3px rgba(0,0,0,0.44);
+        -moz-box-shadow:0px 3px 10px -3px rgba(0,0,0,0.44);
+        -webkit-box-shadow:0px 3px 10px -3px rgba(0,0,0,0.44);
+        @include middle-line(60);
+
+        .heading1 {
+            padding: 0 30px;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .right_list {
+            float: right;
+
+            &__item {
+                float: left;
+                @include font-size(14);
+
+                .link {
+                    display: block;
+                    padding: 0 30px;
+                    box-sizing: border-box;
+                    text-decoration: none;
+                    color: #ddd;
+                    &:hover {
+                        background-color: #555;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}//  .sec01
+
+
+
+.sec02 {
+    .content {
+        min-width: 800px;
+        width: 80%;
+        height: 50%;
+        margin: 8% auto;
+        color: #ddd;
+
+        &__left {
+            width: 50%;
+            height: 100%;
+            text-align: center;
+            float: left;
+
+            .image {
+                width: 70%;
+                height: auto;
+                border-radius: 100%;
+            }
+        }
+
+        &__right {
+            width: 50%;
+            height: 100%;
+            float: left;
+
+            .heading3 {
+                width: 350px;
+                margin: 0 auto;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #aaa;
+                box-sizing: border-box;
+                text-align: center;
+                font-size: 24px;
+            }
+
+            .sentence {
+                margin-top: 10%;
+                line-height: 2.5;
+            }
+        }
+    }
+}//  .sec02
+
+
+
+//  下向き矢印
+.arrow_down{
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.arrow_down::before{
+    content: '';
+    width: 4px;
+    height: 4px;
+    border: 0px;
+    border-top: solid 2px #ddd;
+    border-right: solid 2px #ddd;
+    -ms-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    position: absolute;
+    top: -10px;
+    left: 5px;
+}
+
+//  右向き矢印
+.arrow_right{
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.arrow_right::before{
+    content: '';
+    width: 4px;
+    height: 4px;
+    border: 0px;
+    border-top: solid 2px #ddd;
+    border-right: solid 2px #ddd;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: -9px;
+    left: 5px;
+}

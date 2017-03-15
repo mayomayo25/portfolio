@@ -3,14 +3,100 @@
   <head>
     <meta charset="utf-8">
     <!-- ++++++++++++++++++++++++++++++-->
+    <link rel="stylesheet" href="css/highlight/monokai-sublime.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- ++++++++++++++++++++++++++++++-->
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/vendor/highlight.pack.js"></script>
     <!-- ++++++++++++++++++++++++++++++-->
     <title>PORTFOLIO -DAICHI SEKI-</title>
     <!-- ++++++++++++++++++++++++++++++-->
   </head>
-  <body></body>
+  <body>
+    <div id="skrollr-body">
+      <section class="section sec01 skrollable skrollable-before" id="introduction" data-5800="top:0%;" data-9800="top: -100%;">
+        <div class="side">
+          <ul class="list">
+            <li class="list__item"><a class="link clearfix" href="#">
+                <p class="icon"><span class="arrow_down"></span><img class="icon__image" src="img/icon01.png" alt="フォルダアイコン"></p>
+                <p class="file_name">portfolio</p></a></li>
+            <li class="list__item indent"><a class="link clearfix" href="#">
+                <p class="icon"><span class="arrow_down"></span><img class="icon__image" src="img/icon01.png" alt="フォルダアイコン"></p>
+                <p class="file_name">introduction</p></a></li>
+            <li class="list__item indent"><a class="link clearfix" href="#">
+                <p class="icon"><span class="arrow_right"></span><img class="icon__image" src="img/icon01.png" alt="フォルダアイコン"></p>
+                <p class="file_name">about</p></a></li>
+            <li class="list__item indent"><a class="link clearfix" href="#">
+                <p class="icon"><span class="arrow_right"></span><img class="icon__image" src="img/icon01.png" alt="フォルダアイコン"></p>
+                <p class="file_name">skills</p></a></li>
+            <li class="list__item indent"><a class="link clearfix" href="#">
+                <p class="icon"><span class="arrow_right"></span><img class="icon__image" src="img/icon01.png" alt="フォルダアイコン"></p>
+                <p class="file_name">works</p></a></li>
+            <li class="list__item indent"><a class="link clearfix" href="#">
+                <p class="icon"><span class="arrow_right"></span><img class="icon__image" src="img/icon01.png" alt="フォルダアイコン"></p>
+                <p class="file_name">contact</p></a></li>
+          </ul>
+        </div>
+        <div class="code">
+          <div class="code__tab">
+            <div class="tab">daichi_seki_portfolio.js</div>
+          </div>
+          <div class="code__line">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36<br>37<br>38<br>39<br>40</div>
+          <div class="code__main">
+            <pre><code class="javascript hljs"><span class="comment">/* --------------------------------------
+--- Welcome to my portfolio site.
+--- This page was written by DaichiSeki.
+--- Please scroll!!!
+-------------------------------------- */</span></code><code class="hljs" id="code"> 
+ 
+var profileArray = new Array();
+const name  = "Seki Daichi";
+const pref  = "Mie"
+const birth = "1995/10/25";
+ 
+profileArray["name"]    = name;
+profileArray["pref"] = pref;
+profileArray["birth"]   = birth;
+ 
+console.log("My name is "+ profileArray["name"] +".");
+console.log("I was born in "+ pref +" on "+ birth +".");
+ 
+console.log("Thank you!!");</code></pre>
+          </div>
+        </div>
+        <div class="global_menu clearfix" id="global_menu">
+          <h1 class="heading1">PORTFOLIO -SEKI DAICHI-</h1>
+          <ul class="right_list clearfix">
+            <li class="right_list__item"><a class="link introduction_link" href="#introduction">INTRO</a></li>
+            <li class="right_list__item"><a class="link about_link" href="#about">ABOUT</a></li>
+            <li class="right_list__item"><a class="link skills_link" href="#skills">SKILLS</a></li>
+            <li class="right_list__item"><a class="link works_link" href="#works">WORKS</a></li>
+            <li class="right_list__item"><a class="link contact_link" href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="section sec02" id="about" data-5800="top:100%;" data-9800="top: 0%;" data-10500="top:0%;" data-14500="top: -100%;">
+        <h2 class="heading2"><span data-6800="opacity: 0;" data-9800="opacity: 1;">ABOUT</span></h2>
+        <div class="content clearfix">
+          <div class="content__left" data-8000="opacity:0;" data-9800="opacity:1;"><img class="image" src="img/prof_image01.jpg" alt="プロフィール画像"></div>
+          <div class="content__right" data-8000="transform:translate(130%,0);opacity:0;" data-9800="transform:translate(0%,0);opacity:1;">
+            <h3 class="heading3">関 大智 -Seki Daichi-</h3>
+            <p class="sentence">HAL名古屋WEB開発学科3年の学生です。<br>趣味は旅行とサッカー観戦。<br>去年は10日間で台湾を一周しました。<br><br>最近はフロントエンドの技術に興味があります。<br>コーディングをしている時に幸せを感じます。</p>
+          </div>
+        </div>
+      </section>
+      <section class="section sec03" id="skills" data-10500="top:100%;" data-14500="top: 0%;" data-16500="top:0%;" data-21000="top: -100%;">
+        <h2 class="heading2"><span data-11500="opacity: 0;" data-14500="opacity: 1;">SKILLS</span></h2>
+      </section>
+      <section class="section sec04" id="works" data-16500="top:100%;" data-20500="top: 0%;" data-22500="top:0%;" data-28000="top: -100%;">
+        <h2 class="heading2"><span data-17500="opacity: 0;" data-20500="opacity: 1;">WORKS</span></h2>
+      </section>
+      <section class="section sec05" id="contact" data-22500="top:100%;" data-26500="top: 0%;">
+        <h2 class="heading2"><span data-23500="opacity: 0;" data-26500="opacity: 1;">CONTACT</span></h2>
+      </section>
+    </div>
+    <script src="js/vendor/skrollr.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

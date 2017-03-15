@@ -3,12 +3,65 @@ html(lang="ja")
   head
     meta(charset="utf-8")
     // ++++++++++++++++++++++++++++++
+    link(rel="stylesheet" href="css/highlight/monokai-sublime.css")
     link(rel="stylesheet" href="css/reset.css")
     link(rel="stylesheet" href="css/style.css")
     // ++++++++++++++++++++++++++++++
     script(src="js/vendor/jquery-1.11.2.min.js")
-    script(src="js/main.js")
+    script(src="js/vendor/highlight.pack.js")
     // ++++++++++++++++++++++++++++++
     title PORTFOLIO -DAICHI SEKI-
     // ++++++++++++++++++++++++++++++
   body
+    #skrollr-body
+      section#introduction.section.sec01.skrollable.skrollable-before(data-5800="top:0%;" data-9800="top: -100%;")
+        .side
+          include include/side_menu.pug
+        .code
+          .code__tab
+            .tab daichi_seki_portfolio.js
+          include include/code_line.pug
+          include include/code_main.pug
+        #global_menu.global_menu.clearfix
+          h1.heading1 PORTFOLIO -SEKI DAICHI-
+          ul.right_list.clearfix
+            li.right_list__item
+              a.link.introduction_link(href="#introduction") INTRO
+            li.right_list__item
+              a.link.about_link(href="#about") ABOUT
+            li.right_list__item
+              a.link.skills_link(href="#skills") SKILLS
+            li.right_list__item
+              a.link.works_link(href="#works") WORKS
+            li.right_list__item
+              a.link.contact_link(href="#contact") CONTACT
+      section#about.section.sec02(data-5800="top:100%;" data-9800="top: 0%;" data-10500="top:0%;"  data-14500="top: -100%;")
+        h2.heading2
+          span(data-6800="opacity: 0;" data-9800="opacity: 1;") ABOUT
+        .content.clearfix
+          .content__left(data-8000="opacity:0;" data-9800="opacity:1;")
+            img.image(src="img/prof_image01.jpg" alt="プロフィール画像")
+          .content__right(data-8000="transform:translate(130%,0);opacity:0;" data-9800="transform:translate(0%,0);opacity:1;")
+            h3.heading3 関 大智 -Seki Daichi-
+            p.sentence
+              | HAL名古屋WEB開発学科3年の学生です。
+              br
+              | 趣味は旅行とサッカー観戦。
+              br
+              | 去年は10日間で台湾を一周しました。
+              br
+              br
+              | 最近はフロントエンドの技術に興味があります。
+              br
+              | コーディングをしている時に幸せを感じます。
+      section#skills.section.sec03(data-10500="top:100%;" data-14500="top: 0%;" data-16500="top:0%;" data-21000="top: -100%;")
+        h2.heading2
+          span(data-11500="opacity: 0;" data-14500="opacity: 1;") SKILLS
+      section#works.section.sec04(data-16500="top:100%;" data-20500="top: 0%;" data-22500="top:0%;" data-28000="top: -100%;")
+        h2.heading2
+          span(data-17500="opacity: 0;" data-20500="opacity: 1;") WORKS
+      section#contact.section.sec05(data-22500="top:100%;" data-26500="top: 0%;")
+        h2.heading2
+          span(data-23500="opacity: 0;" data-26500="opacity: 1;") CONTACT
+    script(src="js/vendor/skrollr.min.js")
+    script(src="js/main.js")
