@@ -338,6 +338,78 @@ body {
 
 
 
+.sec04 {
+	.content {
+		width: 800px;
+		height: 500px;
+		.list {
+			width: 100%;
+			height: 100%;
+			padding: 0 30px;
+			box-sizing: border-box;
+			&__item {
+				width: 220px;
+				height: 220px;
+				margin: 0 20px 40px 20px;
+				border: 5px solid #ddd;
+				border-radius: 30px;
+				box-sizing: border-box;
+				float: left;
+				background-color: #333;
+				transition: all .2s ease-in;
+
+				&:first-child {
+					margin-left: 0;
+				}
+				&:nth-child(3) {
+					margin-right: 0;
+				}
+				&:nth-child(4) {
+					margin-left: 0;
+					margin-bottom: 0;
+				}
+				&:nth-child(5) {
+					margin-bottom: 0;
+				}
+
+				&:hover {
+					cursor: pointer;
+					transform: scale(1.1);
+					.icon {
+						transform: scale(1.1);
+					}
+				}
+
+				.link {
+					display: block;
+					text-decoration: none;
+
+					.work_title {
+						padding-top: 40px;
+						box-sizing: border-box;
+						text-align: center;
+						font-size: 20px;
+						color: #ddd;
+					}
+
+					.icon {
+						margin-top: 20px;
+						height: 130px;
+						text-align: center;
+						transition: all .2s linear;
+						&__image {
+							width:auto;
+							height: 100px;
+						}
+					}
+				}
+			}//  .list__item
+		}//  .list
+	}//  .content
+}//  .sec04
+
+
+
 //  下向き矢印
 .arrow_down{
     position: relative;

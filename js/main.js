@@ -1,4 +1,3 @@
-
 //  highlight.js
 hljs.initHighlightingOnLoad();
 
@@ -38,18 +37,18 @@ $(function (){
   });
 
   $(".about_link").bind("click", function(){
-    set("about",9800);
+    set("about",10500);
   });
 
   $(".skills_link").bind("click", function(){
-    set("skills",16800);
+    set("skills",16500);
   });
 
   $(".works_link").bind("click", function(){
-    set("works",22800);
+    set("works",21500);
   });
 
   $(".contact_link").bind("click", function(){
-    set("contact",28800);
+    set("contact",27000);
   });
 });
