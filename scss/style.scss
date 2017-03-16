@@ -7,6 +7,11 @@
 @import "include/variables";
 
 
+@font-face {
+	font-family: 'MoonL';
+	src: url(../font/MoonLight.otf);
+}
+
 
 html {
     height: 100%;
@@ -14,8 +19,7 @@ html {
 
 body {
     position: relative;
-
-    font-family: 'Meiryo','Open Sans', sans-serif;
+    font-family:"MoonL","游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 }
 
 
@@ -33,7 +37,7 @@ body {
         letter-spacing: 12px;
         color: #222;
         background-color: #eee;
-        @include font-size(36);
+        @include font-size(50);
     }
 
     .content {
@@ -129,6 +133,7 @@ body {
                 border-left: 2px solid #5f8cf0;
                 border-radius: 2px 2px 0 0;
                 box-sizing: border-box;
+				font-family: sans-serif;
                 font-size: 12px;
                 color: #ddd;
                 background-color: #23241f;
@@ -205,6 +210,11 @@ body {
             }
         }
     }
+
+	//  コードのフォント変更
+	.hljs {
+		font-family: sans-serif;
+	}
 }//  .sec01
 
 
@@ -230,18 +240,18 @@ body {
             float: left;
 
             .heading3 {
-                width: 350px;
+                width: 400px;
                 margin: 0 auto;
                 padding-bottom: 10px;
                 border-bottom: 1px solid #aaa;
                 box-sizing: border-box;
                 text-align: center;
-                font-size: 24px;
+                font-size: 26px;
             }
 
             .sentence {
                 margin-top: 10%;
-                line-height: 2.5;
+                line-height: 2.8;
             }
         }
     }
@@ -293,7 +303,7 @@ body {
                     width: 100%;
                     margin: auto;
                     text-align: center;
-                    font-size: 30px;
+                    font-size: 25px;
                     color: #ddd;
                     opacity: 0;
                     @include middle-line(50);
