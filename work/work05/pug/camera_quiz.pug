@@ -1,0 +1,39 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    // ++++++++++++++++++++++++++++++
+    link(rel="stylesheet" href="components/loader.css")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/animsition.min.css")
+    link(rel="stylesheet" href="css/sweetalert.css")
+    link(rel="stylesheet" href="css/style.css")
+    link(rel="stylesheet" href="css/quiz.css")
+    // ++++++++++++++++++++++++++++++
+    script(src="components/loader.js")
+    script(src="js/vendor/jquery-1.11.2.min.js")
+    script(src="js/vendor/animsition.min.js")
+    script(src="js/vendor/b64utils.js")
+    script(src="js/vendor/encoding.min.js")
+    script(src="js/vendor/jquery.cookie.js")
+    script(src="js/vendor/sweetalert.min.js")
+    // ++++++++++++++++++++++++++++++
+    title canvasで色取得
+    // ++++++++++++++++++++++++++++++
+  body
+    header.header
+      h1 あかさたなぞるくん
+    section.wrapper.animsition
+      //h2.heading カメラでひらがなモード
+      .canvas
+        .canvas__main
+          canvas#rgba_canvas.rgba_canvas(width="300" height="300")
+        .canvas__back
+          img#canvas_back__image.image(src="img/word_white_01.png" alt="")
+      .btn_block
+        a#canvas_delete.btn.canvas_delete(href="#") 書き直し
+        a#canvas_to_img.btn.canvas_to_img(href="#") 採点
+        //a#go_to_next.btn.go_to_next(href="#") 次の文字へ
+        a#go_to_result.btn.go_to_result.animsition-link(href="camera_result.html") 結果表示
+  script(src="js/main.js")
+  script(src="js/camera_quiz.js")

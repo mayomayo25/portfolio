@@ -1,0 +1,147 @@
+.title {
+  margin: 50px 0 0 0; }
+  .title__h1 {
+    width: 350px;
+    height: auto;
+    margin: 0 auto; }
+    .title__h1 .image {
+      width: 350px;
+      height: auto; }
+
+.menu {
+  margin: 20px 0 0 0; }
+  .menu__nav {
+    width: 280px;
+    height: auto;
+    margin: 0 auto; }
+    .menu__nav .lang_list__item {
+      margin: 30px 0 0 0;
+      padding: 0 20px;
+      box-sizing: border-box; }
+      .menu__nav .lang_list__item .link {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        background-color: #37abd0;
+        font-size: 24px;
+        font-size: 1.5rem;
+        height: 70px;
+        line-height: 70px; }
+  .menu__config {
+    margin: 50px 0;
+    padding: 0 0 0 30px;
+    box-sizing: border-box; }
+    .menu__config .circle {
+      width: 80px;
+      height: 80px;
+      margin: 0 0 0 20px;
+      border-radius: 100%;
+      text-align: center;
+      background-color: #37abd0;
+      float: left; }
+      .menu__config .circle:first-child {
+        margin: 0; }
+      .menu__config .circle__link {
+        display: inline-block; }
+        .menu__config .circle__link .image {
+          width: 50px;
+          height: 50px;
+          padding: 15px; }
+
+#modal_config1, #modal_config3 {
+  height: 370px; }
+
+#modal_config2, #modal_config4 {
+  height: 300px; }
+
+#modal_config5 {
+  height: 550px; }
+
+#modal_config1 .user__menu, #modal_config2 .user__menu, #modal_config3 .user__menu, #modal_config4 .user__menu, #modal_config5 .user__menu {
+  padding: 0 40px;
+  box-sizing: border-box; }
+  #modal_config1 .user__menu__list, #modal_config2 .user__menu__list, #modal_config3 .user__menu__list, #modal_config4 .user__menu__list, #modal_config5 .user__menu__list {
+    margin: 30px 0 0 0; }
+    #modal_config1 .user__menu__list .link, #modal_config2 .user__menu__list .link, #modal_config3 .user__menu__list .link, #modal_config4 .user__menu__list .link, #modal_config5 .user__menu__list .link {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background-color: #37abd0;
+      font-size: 22px;
+      font-size: 1.375rem;
+      height: 60px;
+      line-height: 60px; }
+      #modal_config1 .user__menu__list .link--login, #modal_config2 .user__menu__list .link--login, #modal_config3 .user__menu__list .link--login, #modal_config4 .user__menu__list .link--login, #modal_config5 .user__menu__list .link--login {
+        background-color: #e87878; }
+
+#modal_config1 .signin, #modal_config1 .signup, #modal_config1 .logout, #modal_config2 .signin, #modal_config2 .signup, #modal_config2 .logout, #modal_config3 .signin, #modal_config3 .signup, #modal_config3 .logout, #modal_config4 .signin, #modal_config4 .signup, #modal_config4 .logout, #modal_config5 .signin, #modal_config5 .signup, #modal_config5 .logout {
+  padding: 0 40px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-size: 0.875rem; }
+  #modal_config1 .signin__row, #modal_config1 .signup__row, #modal_config1 .logout__row, #modal_config2 .signin__row, #modal_config2 .signup__row, #modal_config2 .logout__row, #modal_config3 .signin__row, #modal_config3 .signup__row, #modal_config3 .logout__row, #modal_config4 .signin__row, #modal_config4 .signup__row, #modal_config4 .logout__row, #modal_config5 .signin__row, #modal_config5 .signup__row, #modal_config5 .logout__row {
+    margin: 20px 0; }
+    #modal_config1 .signin__row .label, #modal_config1 .signup__row .label, #modal_config1 .logout__row .label, #modal_config2 .signin__row .label, #modal_config2 .signup__row .label, #modal_config2 .logout__row .label, #modal_config3 .signin__row .label, #modal_config3 .signup__row .label, #modal_config3 .logout__row .label, #modal_config4 .signin__row .label, #modal_config4 .signup__row .label, #modal_config4 .logout__row .label, #modal_config5 .signin__row .label, #modal_config5 .signup__row .label, #modal_config5 .logout__row .label {
+      display: block;
+      margin: 0 0 5px 0; }
+    #modal_config1 .signin__row .input, #modal_config1 .signup__row .input, #modal_config1 .logout__row .input, #modal_config2 .signin__row .input, #modal_config2 .signup__row .input, #modal_config2 .logout__row .input, #modal_config3 .signin__row .input, #modal_config3 .signup__row .input, #modal_config3 .logout__row .input, #modal_config4 .signin__row .input, #modal_config4 .signup__row .input, #modal_config4 .logout__row .input, #modal_config5 .signin__row .input, #modal_config5 .signup__row .input, #modal_config5 .logout__row .input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      font-size: 20px;
+      font-size: 1.25rem; }
+    #modal_config1 .signin__row .link, #modal_config1 .signup__row .link, #modal_config1 .logout__row .link, #modal_config2 .signin__row .link, #modal_config2 .signup__row .link, #modal_config2 .logout__row .link, #modal_config3 .signin__row .link, #modal_config3 .signup__row .link, #modal_config3 .logout__row .link, #modal_config4 .signin__row .link, #modal_config4 .signup__row .link, #modal_config4 .logout__row .link, #modal_config5 .signin__row .link, #modal_config5 .signup__row .link, #modal_config5 .logout__row .link {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background-color: #37abd0;
+      font-size: 20px;
+      font-size: 1.25rem;
+      height: 60px;
+      line-height: 60px; }
+      #modal_config1 .signin__row .link--login, #modal_config1 .signup__row .link--login, #modal_config1 .logout__row .link--login, #modal_config2 .signin__row .link--login, #modal_config2 .signup__row .link--login, #modal_config2 .logout__row .link--login, #modal_config3 .signin__row .link--login, #modal_config3 .signup__row .link--login, #modal_config3 .logout__row .link--login, #modal_config4 .signin__row .link--login, #modal_config4 .signup__row .link--login, #modal_config4 .logout__row .link--login, #modal_config5 .signin__row .link--login, #modal_config5 .signup__row .link--login, #modal_config5 .logout__row .link--login {
+        background-color: #e87878; }
+
+#modal_config1 .past, #modal_config2 .past, #modal_config3 .past, #modal_config4 .past, #modal_config5 .past {
+  overflow-y: scroll;
+  height: 450px;
+  padding: 40px 0;
+  box-sizing: border-box; }
+  #modal_config1 .past .record_row, #modal_config2 .past .record_row, #modal_config3 .past .record_row, #modal_config4 .past .record_row, #modal_config5 .past .record_row {
+    width: 250px;
+    height: auto;
+    margin: 0 auto 30px auto;
+    border: 2px solid #37abd0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-size: 1.25rem; }
+    #modal_config1 .past .record_row:last-child, #modal_config2 .past .record_row:last-child, #modal_config3 .past .record_row:last-child, #modal_config4 .past .record_row:last-child, #modal_config5 .past .record_row:last-child {
+      margin: 0 auto; }
+    #modal_config1 .past .record_row .date, #modal_config2 .past .record_row .date, #modal_config3 .past .record_row .date, #modal_config4 .past .record_row .date, #modal_config5 .past .record_row .date {
+      margin: 0 0 20px 0;
+      text-align: center;
+      color: #fff;
+      background-color: #37abd0;
+      height: 60px;
+      line-height: 60px; }
+    #modal_config1 .past .record_row .item__row, #modal_config2 .past .record_row .item__row, #modal_config3 .past .record_row .item__row, #modal_config4 .past .record_row .item__row, #modal_config5 .past .record_row .item__row {
+      width: 80%;
+      margin: 0 auto 8px auto;
+      border-bottom: 1px dotted #37abd0;
+      height: 51px;
+      line-height: 51px; }
+      #modal_config1 .past .record_row .item__row .image, #modal_config2 .past .record_row .item__row .image, #modal_config3 .past .record_row .item__row .image, #modal_config4 .past .record_row .item__row .image, #modal_config5 .past .record_row .item__row .image {
+        display: block;
+        width: 50px;
+        margin: 0 40px 0 10px;
+        float: left;
+        height: 50px;
+        line-height: 50px; }
+      #modal_config1 .past .record_row .item__row .point, #modal_config2 .past .record_row .item__row .point, #modal_config3 .past .record_row .item__row .point, #modal_config4 .past .record_row .item__row .point, #modal_config5 .past .record_row .item__row .point {
+        float: left;
+        height: 50px;
+        line-height: 50px; }

@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/* mixin */
+/* mixin */
+/* articleここから */
+.article {
+  width: 100%;
+  height: auto;
+  padding: 0 0 80px 0;
+  box-sizing: border-box;
+  color: #333; }
+  .article .key_visual {
+    width: 1000px;
+    height: 192px;
+    margin: 40px auto;
+    padding: 0 20px;
+    box-sizing: border-box; }
+    .article .key_visual img {
+      display: block;
+      width: 960px;
+      height: auto; }
+  .article .content_title {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 20px 50px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 50px;
+    font-size: 3.125rem;
+    font-weight: bold; }
+    .article .content_title .en {
+      font-size: 20px;
+      font-size: 1.25rem;
+      font-weight: none; }
+  .article__sec01, .article__sec02 {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; }
+    .article__sec01__title, .article__sec02__title {
+      padding: 50px 0 30px 0;
+      border-bottom: 1px solid #333;
+      font-size: 18px;
+      font-size: 1.125rem; }
+      .article__sec01__title span, .article__sec02__title span {
+        font-size: 36px;
+        font-size: 2.25rem;
+        font-weight: bold;
+        background: linear-gradient(transparent 70%, #FADC32 20%); }
+  .article__sec01__title {
+    border-top: 1px solid #333; }
+  .article__sec01__wrapp {
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0 30px 0; }
+    .article__sec01__wrapp .left_block, .article__sec01__wrapp .right_block {
+      height: 240px;
+      float: left; }
+    .article__sec01__wrapp .left_block {
+      width: 400px;
+      padding: 0 20px 0 40px;
+      box-sizing: border-box; }
+      .article__sec01__wrapp .left_block span {
+        display: block;
+        height: 240px;
+        background-color: #F32683; }
+    .article__sec01__wrapp .right_block {
+      width: 500px;
+      padding: 10px 40px 10px 20px;
+      box-sizing: border-box; }
+      .article__sec01__wrapp .right_block h4 {
+        padding: 0 0 20px 0;
+        line-height: 40px;
+        font-size: 32px;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #F32683;
+        letter-spacing: -2px; }
+        .article__sec01__wrapp .right_block h4 span {
+          display: block; }
+          .article__sec01__wrapp .right_block h4 span:last-child {
+            padding: 0 0 0 251px;
+            box-sizing: border-box; }
+      .article__sec01__wrapp .right_block .word {
+        line-height: 20px;
+        text-align: justify;
+        text-justify: distribute;
+        font-size: 16px;
+        font-size: 1rem; }
+  .article__sec02__wrapp {
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0 30px 0; }
+    .article__sec02__wrapp .song_heading {
+      text-align: center; }
+      .article__sec02__wrapp .song_heading span {
+        display: block;
+        font-size: 36px;
+        font-size: 2.25rem;
+        font-weight: bold; }
+        .article__sec02__wrapp .song_heading span:last-child {
+          padding: 5px 0 0 0;
+          font-size: 16px;
+          font-size: 1rem;
+          font-weight: normal;
+          color: #F32683;
+          letter-spacing: -1px; }
+    .article__sec02__wrapp .list {
+      width: 820px;
+      height: auto;
+      margin: 50px auto 0 auto; }
+      .article__sec02__wrapp .list .unit {
+        width: 260px;
+        height: 330px;
+        float: left; }
+        .article__sec02__wrapp .list .unit:nth-child(2) {
+          margin: 0 20px; }
+        .article__sec02__wrapp .list .unit .song_title {
+          height: 60px;
+          text-align: center;
+          margin: 0 0 10px 0;
+          border: 1px solid #AAA;
+          line-height: 58px;
+          box-sizing: border-box;
+          font-size: 18px;
+          font-size: 1.125rem;
+          font-weight: bold; }
+        .article__sec02__wrapp .list .unit .song_lead {
+          position: relative;
+          height: 260px;
+          border: 1px solid #AAA;
+          box-sizing: border-box;
+          /* audio.jsの調整 */
+          /* audio.jsの調整ここまで */ }
+          .article__sec02__wrapp .list .unit .song_lead img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 200px;
+            height: auto;
+            margin: auto; }
+          .article__sec02__wrapp .list .unit .song_lead .word {
+            padding: 30px;
+            line-height: 20px;
+            box-sizing: border-box; }
+          .article__sec02__wrapp .list .unit .song_lead .audiojs {
+            position: absolute;
+            bottom: 0;
+            width: 258px; }
+            .article__sec02__wrapp .list .unit .song_lead .audiojs .scrubber {
+              width: 100px; }
+              .article__sec02__wrapp .list .unit .song_lead .audiojs .scrubber .progress {
+                background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #333), color-stop(0.5, #7f6c01), color-stop(0.51, #7f6c01), color-stop(1, #feda02)); }
+
+/* articleここまで */
+
+/*# sourceMappingURL=sample_play.css.map */

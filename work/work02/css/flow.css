@@ -1,0 +1,377 @@
+@charset "UTF-8";
+/* mixin */
+/* mixin */
+/* articleここから */
+.article {
+  width: 100%;
+  height: auto;
+  padding: 0 0 80px 0;
+  box-sizing: border-box;
+  color: #333; }
+  .article .key_visual {
+    width: 1000px;
+    height: 192px;
+    margin: 40px auto;
+    padding: 0 20px;
+    box-sizing: border-box; }
+    .article .key_visual img {
+      display: block;
+      width: 960px;
+      height: auto; }
+  .article .content_title {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 20px 50px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 50px;
+    font-size: 3.125rem;
+    font-weight: bold; }
+    .article .content_title .en {
+      font-size: 20px;
+      font-size: 1.25rem;
+      font-weight: none; }
+  .article__sec01, .article__sec02, .article__sec03, .article__sec04 {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; }
+    .article__sec01__title, .article__sec02__title, .article__sec03__title, .article__sec04__title {
+      padding: 50px 0 30px 0;
+      border-bottom: 1px solid #333;
+      font-size: 18px;
+      font-size: 1.125rem; }
+      .article__sec01__title span, .article__sec02__title span, .article__sec03__title span, .article__sec04__title span {
+        font-size: 36px;
+        font-size: 2.25rem;
+        font-weight: bold;
+        background: linear-gradient(transparent 70%, #FADC32 20%); }
+  .article__sec01__title {
+    border-top: 1px solid #333; }
+  .article__sec01__wrapp {
+    position: relative;
+    width: 960px;
+    height: auto;
+    padding: 50px 0 30px 0; }
+    .article__sec01__wrapp .left, .article__sec01__wrapp .center, .article__sec01__wrapp .right {
+      width: 230px;
+      height: 370px;
+      padding: 20px 15px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      float: left; }
+      .article__sec01__wrapp .left__heading, .article__sec01__wrapp .center__heading, .article__sec01__wrapp .right__heading {
+        line-height: 30px;
+        text-align: center;
+        text-shadow: 0 0 1px #333;
+        font-size: 24px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #FFF;
+        letter-spacing: -1px; }
+      .article__sec01__wrapp .left__unit, .article__sec01__wrapp .center__unit, .article__sec01__wrapp .right__unit {
+        width: 200px;
+        height: 60px;
+        margin: 40px 0 0 0;
+        padding: 5px 0;
+        border: 1px solid #CCC;
+        box-sizing: border-box;
+        background-color: #FFF; }
+        .article__sec01__wrapp .left__unit--word, .article__sec01__wrapp .center__unit--word, .article__sec01__wrapp .right__unit--word {
+          line-height: 48px;
+          text-align: center;
+          font-size: 24px;
+          font-size: 1.5rem; }
+          .article__sec01__wrapp .left__unit--word span, .article__sec01__wrapp .center__unit--word span, .article__sec01__wrapp .right__unit--word span {
+            display: block;
+            line-height: 24px; }
+        .article__sec01__wrapp .left__unit .arrow, .article__sec01__wrapp .center__unit .arrow, .article__sec01__wrapp .right__unit .arrow {
+          position: relative;
+          width: 0;
+          height: 0;
+          margin: 20px auto 0 auto;
+          border: 20px solid transparent;
+          border-top-color: #FFF; }
+          .article__sec01__wrapp .left__unit .arrow:after, .article__sec01__wrapp .center__unit .arrow:after, .article__sec01__wrapp .right__unit .arrow:after {
+            position: absolute;
+            content: '';
+            top: -35px;
+            left: -10px;
+            width: 20px;
+            height: 19px;
+            background: #FFF; }
+    .article__sec01__wrapp .left {
+      margin: 0 0 0 70px;
+      background-color: #7BA6D6; }
+    .article__sec01__wrapp .center {
+      background-color: #9CD39C; }
+      .article__sec01__wrapp .center .large_unit {
+        height: 100px;
+        margin: 20px 0 0 0;
+        background-color: #EB613B;
+        color: #FFF; }
+        .article__sec01__wrapp .center .large_unit .center__unit--word {
+          line-height: 24px;
+          font-size: 16px;
+          font-size: 1rem; }
+          .article__sec01__wrapp .center .large_unit .center__unit--word span.title {
+            line-height: 40px;
+            font-size: 24px;
+            font-size: 1.5rem; }
+      .article__sec01__wrapp .center .last_unit {
+        margin: 20px 0 0 0; }
+      .article__sec01__wrapp .center .arrow2 {
+        position: relative;
+        width: 40px;
+        height: 22px;
+        margin: 5px auto 0 auto;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,eb613b+70 */
+        background: #ffffff;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #ffffff 0%, #eb613b 70%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #ffffff 0%, #eb613b 70%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #ffffff 0%, #eb613b 70%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eb613b',GradientType=0 );
+        /* IE6-9 */ }
+      .article__sec01__wrapp .center .reverse {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eb613b+30,ffffff+100 */
+        background: #eb613b;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #eb613b 30%, #ffffff 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #eb613b 30%, #ffffff 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #eb613b 30%, #ffffff 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb613b', endColorstr='#ffffff',GradientType=0 );
+        /* IE6-9 */ }
+    .article__sec01__wrapp .right {
+      margin: 0 70px 0 0;
+      background-color: #FFC78C; }
+    .article__sec01__wrapp .space_area {
+      width: 65px;
+      height: 370px;
+      float: left; }
+      .article__sec01__wrapp .space_area .gradient_area {
+        width: 65px;
+        height: 60px;
+        margin: 30px 0 0 0; }
+    .article__sec01__wrapp .left_to_center .gradient_area {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7ba6d6+0,9cd39c+100 */
+      background: #7ba6d6;
+      /* Old browsers */
+      background: -moz-linear-gradient(left, #7ba6d6 0%, #9cd39c 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, #7ba6d6 0%, #9cd39c 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, #7ba6d6 0%, #9cd39c 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ba6d6', endColorstr='#9cd39c',GradientType=1 );
+      /* IE6-9 */ }
+    .article__sec01__wrapp .center_to_right .gradient_area {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9cd39c+0,ffc78c+100 */
+      background: #9cd39c;
+      /* Old browsers */
+      background: -moz-linear-gradient(left, #9cd39c 0%, #ffc78c 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, #9cd39c 0%, #ffc78c 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, #9cd39c 0%, #ffc78c 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cd39c', endColorstr='#ffc78c',GradientType=1 );
+      /* IE6-9 */ }
+    .article__sec01__wrapp .number_circle {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      padding: 15px 0;
+      border: 3px solid #FFF;
+      border-radius: 35px;
+      box-sizing: border-box;
+      color: #FFF; }
+      .article__sec01__wrapp .number_circle span {
+        display: block;
+        line-height: 17px;
+        text-align: center;
+        font-size: 17px;
+        font-size: 1.0625rem; }
+        .article__sec01__wrapp .number_circle span:last-child {
+          line-height: 25px;
+          font-size: 25px;
+          font-size: 1.5625rem; }
+    .article__sec01__wrapp .step1, .article__sec01__wrapp .step2, .article__sec01__wrapp .step3 {
+      background-color: #3b84d3;
+      left: 40px; }
+    .article__sec01__wrapp .step4, .article__sec01__wrapp .step5 {
+      background-color: #5cd15c;
+      left: 335px; }
+    .article__sec01__wrapp .step6, .article__sec01__wrapp .step7, .article__sec01__wrapp .step8 {
+      background-color: #ff9f3f;
+      left: 630px; }
+    .article__sec01__wrapp .step1, .article__sec01__wrapp .step4, .article__sec01__wrapp .step6 {
+      top: 120px; }
+    .article__sec01__wrapp .step2 {
+      top: 220px; }
+    .article__sec01__wrapp .step3, .article__sec01__wrapp .step5, .article__sec01__wrapp .step7 {
+      top: 320px; }
+  .article__sec02__wrapp {
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0 30px 0; }
+    .article__sec02__wrapp .left_block, .article__sec02__wrapp .right_block {
+      height: 240px;
+      float: left; }
+    .article__sec02__wrapp .left_block {
+      width: 400px;
+      padding: 0 20px 0 40px;
+      box-sizing: border-box; }
+      .article__sec02__wrapp .left_block span {
+        display: block;
+        height: 240px;
+        background-color: #70b5ff; }
+    .article__sec02__wrapp .right_block {
+      width: 500px;
+      padding: 10px 40px 10px 20px;
+      box-sizing: border-box; }
+      .article__sec02__wrapp .right_block h4 {
+        padding: 0 0 20px 0;
+        line-height: 40px;
+        font-size: 32px;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #238CFF;
+        letter-spacing: -2px; }
+        .article__sec02__wrapp .right_block h4 span {
+          display: block; }
+          .article__sec02__wrapp .right_block h4 span:last-child {
+            padding: 0 0 0 30px;
+            box-sizing: border-box; }
+      .article__sec02__wrapp .right_block .word {
+        line-height: 20px;
+        text-align: justify;
+        text-justify: distribute;
+        font-size: 16px;
+        font-size: 1rem; }
+  .article__sec03__wrapp {
+    width: 800px;
+    height: auto;
+    margin: 0 auto; }
+    .article__sec03__wrapp .flow {
+      height: 50px;
+      margin: 30px 0 0 0; }
+      .article__sec03__wrapp .flow__left, .article__sec03__wrapp .flow__right {
+        height: 100%;
+        border: 1px solid #CCC;
+        box-sizing: border-box;
+        float: left; }
+      .article__sec03__wrapp .flow__left {
+        position: relative;
+        width: 295px;
+        margin: 0 5px 0 0; }
+        .article__sec03__wrapp .flow__left .number {
+          width: 30px;
+          height: 30px;
+          margin: 9px 0 9px 9px;
+          border-radius: 15px;
+          line-height: 30px;
+          text-align: center;
+          font-size: 20px;
+          font-size: 1.25rem;
+          font-weight: bold;
+          background-color: #238CFF;
+          color: #FFF;
+          float: left; }
+        .article__sec03__wrapp .flow__left .heading {
+          height: 48px;
+          margin: 0 0 0 20px;
+          line-height: 48px;
+          font-size: 20px;
+          font-size: 1.25rem;
+          font-weight: bold;
+          float: left; }
+        .article__sec03__wrapp .flow__left .arrow {
+          position: absolute;
+          top: 60px;
+          left: 14px;
+          width: 0;
+          height: 0;
+          margin: 0 auto;
+          border: 10px solid transparent;
+          border-top-color: #238CFF; }
+      .article__sec03__wrapp .flow__right {
+        width: 500px; }
+        .article__sec03__wrapp .flow__right .text {
+          height: 48px;
+          margin: 0 0 0 20px;
+          line-height: 48px;
+          font-size: 18px;
+          font-size: 1.125rem; }
+    .article__sec03__wrapp .more {
+      margin: 20px 0 0 0;
+      text-align: right; }
+      .article__sec03__wrapp .more a {
+        text-decoration: none;
+        font-size: 18px;
+        font-size: 1.125rem;
+        font-weight: bold;
+        color: #333; }
+        .article__sec03__wrapp .more a:hover {
+          color: #D53047; }
+          .article__sec03__wrapp .more a:hover span {
+            background: linear-gradient(transparent 100%, #FADC32 20%); }
+        .article__sec03__wrapp .more a span {
+          background: linear-gradient(transparent 70%, #FADC32 20%); }
+  .article__sec04__wrapp {
+    width: 800px;
+    height: auto;
+    margin: 0 auto; }
+    .article__sec04__wrapp .heading_word {
+      margin: 50px 0 0 50px;
+      font-size: 26px;
+      font-size: 1.625rem; }
+    .article__sec04__wrapp .row {
+      width: 100%;
+      height: 290px;
+      margin: 30px 0 0 0; }
+      .article__sec04__wrapp .row__unit {
+        width: 200px;
+        height: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        float: left; }
+        .article__sec04__wrapp .row__unit:first-child {
+          padding: 0 20px 0 0; }
+        .article__sec04__wrapp .row__unit:last-child {
+          padding: 0 0 0 20px; }
+        .article__sec04__wrapp .row__unit figure .img {
+          width: 120px;
+          height: 120px;
+          margin: 20px auto 0 auto;
+          border: 2px solid #238CFF;
+          box-sizing: border-box;
+          border-radius: 5px; }
+          .article__sec04__wrapp .row__unit figure .img img {
+            display: block;
+            width: 80px;
+            height: 80px;
+            margin: 18px auto; }
+        .article__sec04__wrapp .row__unit figure figcaption {
+          margin: 20px 0 0 0;
+          text-align: center;
+          font-size: 23px;
+          font-size: 1.4375rem;
+          font-weight: bold; }
+        .article__sec04__wrapp .row__unit .word {
+          margin: 20px 0 0 0;
+          text-align: justify;
+          text-justify: distribute; }
+
+/* articleここまで */
+
+/*# sourceMappingURL=flow.css.map */

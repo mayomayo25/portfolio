@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <!-- ++++++++++++++++++++++++++++++-->
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <!-- ++++++++++++++++++++++++++++++-->
+    <script src="components/loader.js"></script>
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/vendor/animsition.min.js"></script>
+    <script src="js/vendor/b64utils.js"></script>
+    <script src="js/vendor/jquery.cookie.js"></script>
+    <script src="js/vendor/sweetalert.min.js"></script>
+    <!-- ++++++++++++++++++++++++++++++-->
+    <title>canvasで色取得</title>
+    <!-- ++++++++++++++++++++++++++++++-->
+  </head>
+  <body>
+    <header class="header">
+      <h1>あかさたなぞるくん</h1>
+    </header>
+    <section class="wrapper animsition">
+      <!--h2.heading ひらがなモード-->
+      <div class="canvas">
+        <div class="canvas__main">
+          <canvas class="rgba_canvas" id="rgba_canvas" width="300" height="300"></canvas>
+        </div>
+        <div class="canvas__back"><img class="image" id="canvas_back__image" src="img/word_white_01.png" alt=""></div>
+      </div>
+      <div class="btn_block"><a class="btn canvas_delete" id="canvas_delete" href="#">書き直し</a><a class="btn canvas_to_img" id="canvas_to_img" href="#">採点</a>
+        <!--a#go_to_next.btn.go_to_next(href="#") 次の文字へ--><a class="btn go_to_result animsition-link" id="go_to_result" href="result.html">結果表示</a>
+      </div>
+    </section>
+  </body>
+  <script src="js/main.js"></script>
+  <script src="js/quiz.js"></script>
+</html>

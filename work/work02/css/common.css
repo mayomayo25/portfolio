@@ -1,0 +1,406 @@
+@charset "UTF-8";
+@font-face {
+  font-family: '03スマートフォントUI';
+  src: url(../font/03スマートフォントUI.otf); }
+/* mixin */
+/* mixin */
+html {
+  font-size: 14px;
+  font-size: 0.875rem; }
+
+body {
+  font-family: '03スマートフォントUI','游ゴシック', YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN', 'メイリオ',Meiryo, sans-serif; }
+
+/* headerここから */
+.header {
+  width: 100%;
+  height: auto; }
+  .header__wrapp {
+    width: 1000px;
+    height: 170px;
+    margin: 0 auto; }
+    .header__wrapp .title_block {
+      width: 540px;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      float: left; }
+      .header__wrapp .title_block span {
+        display: block;
+        width: 100%;
+        height: 100%; }
+    .header__wrapp .support_block {
+      width: 460px;
+      height: 100%;
+      float: left; }
+      .header__wrapp .support_block .help {
+        width: 200px;
+        height: 100%;
+        padding: 20px 0;
+        box-sizing: border-box;
+        float: left; }
+        .header__wrapp .support_block .help li {
+          margin: 10px 0 0 0; }
+          .header__wrapp .support_block .help li:last-child {
+            margin: 10px 0; }
+          .header__wrapp .support_block .help li a {
+            display: block;
+            text-decoration: none;
+            color: #000; }
+            .header__wrapp .support_block .help li a:hover figcaption {
+              color: #FF5855; }
+            .header__wrapp .support_block .help li a figure {
+              position: relative;
+              width: auto;
+              height: 30px; }
+              .header__wrapp .support_block .help li a figure .circle {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 15px;
+                background-color: #555; }
+              .header__wrapp .support_block .help li a figure .icon {
+                position: absolute;
+                top: 7px;
+                left: 7px;
+                width: 16px;
+                height: 16px;
+                margin: auto; }
+              .header__wrapp .support_block .help li a figure figcaption {
+                height: 30px;
+                padding: 0 0 0 40px;
+                line-height: 30px;
+                font-size: 18px;
+                font-size: 1.125rem;
+                color: #555; }
+      .header__wrapp .support_block .contact {
+        width: 260px;
+        height: 100%;
+        padding: 30px 20px 30px 10px;
+        box-sizing: border-box;
+        float: left; }
+        .header__wrapp .support_block .contact__content {
+          position: relative;
+          width: 230px;
+          height: 100%;
+          padding: 10px;
+          border: 1px solid #AAA;
+          border-radius: 5px;
+          box-sizing: border-box; }
+          .header__wrapp .support_block .contact__content figure {
+            position: relative;
+            width: auto;
+            height: 30px; }
+            .header__wrapp .support_block .contact__content figure .circle {
+              position: absolute;
+              width: 30px;
+              height: 30px;
+              border-radius: 15px;
+              background-color: #555; }
+            .header__wrapp .support_block .contact__content figure .icon {
+              position: absolute;
+              top: 7px;
+              left: 7px;
+              width: 16px;
+              height: 16px;
+              margin: auto; }
+            .header__wrapp .support_block .contact__content figure figcaption {
+              height: 30px;
+              line-height: 30px;
+              text-align: right;
+              font-size: 26px;
+              font-size: 1.625rem;
+              font-weight: bold;
+              color: #555; }
+          .header__wrapp .support_block .contact__content a {
+            display: block;
+            width: 210px;
+            height: 50px;
+            margin: 8px 0 0 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #D53C50; }
+            .header__wrapp .support_block .contact__content a:hover {
+              background-color: #D57B83;
+              cursor: pointer; }
+            .header__wrapp .support_block .contact__content a img {
+              display: block;
+              width: 30px;
+              height: 30px;
+              float: left; }
+            .header__wrapp .support_block .contact__content a span {
+              display: block;
+              width: 160px;
+              height: 30px;
+              line-height: 30px;
+              text-align: right;
+              font-size: 17px;
+              font-size: 1.0625rem;
+              color: #FFF;
+              float: left; }
+  .header__nav {
+    width: 100%;
+    height: 70px;
+    background-color: #333; }
+    .header__nav ul {
+      width: 1000px;
+      height: 100%;
+      margin: auto;
+      padding: 0 20px;
+      box-sizing: border-box; }
+      .header__nav ul li {
+        float: left; }
+        .header__nav ul li a {
+          display: block;
+          height: 70px;
+          padding: 15px 0;
+          box-sizing: border-box;
+          transition: background-color 0.1s linear; }
+          .header__nav ul li a:hover {
+            background-color: #666; }
+          .header__nav ul li a .border_unit, .header__nav ul li a .border_unit__last {
+            width: 100%;
+            height: 40px;
+            padding: 0 19px;
+            border-left: 1px solid #AAA;
+            box-sizing: border-box; }
+            .header__nav ul li a .border_unit img, .header__nav ul li a .border_unit__last img {
+              display: block;
+              width: 40px;
+              height: 40px;
+              float: left; }
+            .header__nav ul li a .border_unit span, .header__nav ul li a .border_unit__last span {
+              display: block;
+              height: 40px;
+              margin: 0 0 0 15px;
+              line-height: 40px;
+              letter-spacing: -1.3px;
+              color: #FFF;
+              float: left; }
+          .header__nav ul li a .border_unit__last {
+            border-right: 1px solid #AAA; }
+  .header .key_visual {
+    width: 1000px;
+    height: 363.83px;
+    margin: 10px auto;
+    padding: 0 20px;
+    box-sizing: border-box; }
+    .header .key_visual__img {
+      width: 960px;
+      height: auto; }
+
+/* headerここまで */
+/* footerここから */
+.footer {
+  width: 100%;
+  height: auto; }
+  .footer__sec01 {
+    width: 100%;
+    min-width: 1000px;
+    height: auto;
+    border-bottom: 1px solid #FFF;
+    box-sizing: border-box;
+    background-color: #333; }
+    .footer__sec01__link_block {
+      width: 1000px;
+      height: auto;
+      margin: 0 auto;
+      padding: 40px 0 30px 0; }
+      .footer__sec01__link_block .link_title {
+        padding: 0 0 40px 20px;
+        font-size: 40px;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #FFF;
+        letter-spacing: 3px; }
+      .footer__sec01__link_block .link_contents__item {
+        width: 200px;
+        height: 200px;
+        float: left; }
+        .footer__sec01__link_block .link_contents__item .link {
+          display: block;
+          position: relative;
+          width: 100%;
+          height: 100%;
+          border-radius: 200px;
+          text-decoration: none;
+          transition: background-color 0.1s linear; }
+          .footer__sec01__link_block .link_contents__item .link:hover {
+            background-color: #555; }
+          .footer__sec01__link_block .link_contents__item .link__image {
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            padding: 33px 0 0 0; }
+          .footer__sec01__link_block .link_contents__item .link__label {
+            padding: 20px 0 0 0;
+            text-align: center;
+            color: #FFF; }
+  .footer__sec02 {
+    width: 100%;
+    min-width: 1000px;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #333; }
+    .footer__sec02__voice_block {
+      width: 1000px;
+      height: auto;
+      margin: 0 auto;
+      padding: 40px 0 30px 0; }
+      .footer__sec02__voice_block .voice_title {
+        padding: 0 0 30px 20px;
+        font-size: 40px;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #FFF;
+        letter-spacing: 3px; }
+      .footer__sec02__voice_block .voice_title_hint {
+        padding: 0 0 0 20px;
+        font-size: 20px;
+        font-size: 1.25rem;
+        color: #FFF; }
+      .footer__sec02__voice_block .voice_contents .item {
+        width: 500px;
+        float: left; }
+        .footer__sec02__voice_block .voice_contents .item__user_name {
+          margin: 30px 0 0 50px;
+          font-size: 20px;
+          font-size: 1.25rem;
+          color: #FFF; }
+        .footer__sec02__voice_block .voice_contents .item__balloon {
+          position: relative;
+          width: 460px;
+          height: 170px;
+          margin: 30px 0 0 20px;
+          background-color: #FFF; }
+          .footer__sec02__voice_block .voice_contents .item__balloon .left {
+            width: 180px;
+            height: 100%;
+            float: left; }
+            .footer__sec02__voice_block .voice_contents .item__balloon .left .evaluation {
+              padding: 20px 0 15px 0;
+              text-align: center; }
+              .footer__sec02__voice_block .voice_contents .item__balloon .left .evaluation__image {
+                width: 100px;
+                height: auto; }
+            .footer__sec02__voice_block .voice_contents .item__balloon .left .user {
+              text-align: center; }
+          .footer__sec02__voice_block .voice_contents .item__balloon .right {
+            width: 280px;
+            height: 100%;
+            padding: 0 20px 0 10px;
+            box-sizing: border-box;
+            float: left; }
+            .footer__sec02__voice_block .voice_contents .item__balloon .right p {
+              line-height: 15px;
+              font-size: 14px;
+              font-size: 0.875rem; }
+              .footer__sec02__voice_block .voice_contents .item__balloon .right p span {
+                display: block; }
+                .footer__sec02__voice_block .voice_contents .item__balloon .right p span:first-child {
+                  padding: 20px 0 15px 0; }
+        .footer__sec02__voice_block .voice_contents .item__balloon:before {
+          content: "";
+          position: absolute;
+          top: -15px;
+          left: 50px;
+          margin-left: -15px;
+          width: 0;
+          height: 0;
+          border-bottom: 15px solid #FFF;
+          border-left: 15px solid transparent;
+          border-right: 15px solid transparent; }
+  .footer__sec03 {
+    width: 100%;
+    min-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #FFF; }
+    .footer__sec03 .wrapp {
+      width: 1000px;
+      height: auto;
+      margin: 0 auto; }
+      .footer__sec03 .wrapp .footer__sec03__nav_block {
+        width: 700px;
+        height: auto;
+        margin: 20px 0;
+        font-size: 18px;
+        font-size: 1.125rem;
+        float: left; }
+        .footer__sec03 .wrapp .footer__sec03__nav_block .footer_nav01, .footer__sec03 .wrapp .footer__sec03__nav_block .footer_nav02 {
+          margin: 0 20px;
+          border-bottom: 1px solid #AAA; }
+          .footer__sec03 .wrapp .footer__sec03__nav_block .footer_nav01 ul li, .footer__sec03 .wrapp .footer__sec03__nav_block .footer_nav02 ul li {
+            padding: 20px 40px 15px 0;
+            box-sizing: border-box;
+            float: left; }
+            .footer__sec03 .wrapp .footer__sec03__nav_block .footer_nav01 ul li a, .footer__sec03 .wrapp .footer__sec03__nav_block .footer_nav02 ul li a {
+              text-decoration: none;
+              color: #000; }
+              .footer__sec03 .wrapp .footer__sec03__nav_block .footer_nav01 ul li a:hover, .footer__sec03 .wrapp .footer__sec03__nav_block .footer_nav02 ul li a:hover {
+                text-decoration: underline;
+                color: #FF5855; }
+        .footer__sec03 .wrapp .footer__sec03__nav_block .footer_nav02 {
+          border-bottom: none; }
+      .footer__sec03 .wrapp .footer__sec03__info_block {
+        width: 300px;
+        height: auto;
+        padding: 0 20px 0 0;
+        box-sizing: border-box;
+        float: left; }
+        .footer__sec03 .wrapp .footer__sec03__info_block .request, .footer__sec03 .wrapp .footer__sec03__info_block .contact {
+          width: 230px;
+          height: 70px;
+          margin: 0 0 0 auto; }
+          .footer__sec03 .wrapp .footer__sec03__info_block .request a, .footer__sec03 .wrapp .footer__sec03__info_block .contact a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: 15px auto 0 auto;
+            padding: 10px 30px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #D53C50;
+            transition: background-color 0.2s linear; }
+            .footer__sec03 .wrapp .footer__sec03__info_block .request a:hover, .footer__sec03 .wrapp .footer__sec03__info_block .contact a:hover {
+              background-color: #D57B83; }
+            .footer__sec03 .wrapp .footer__sec03__info_block .request a img, .footer__sec03 .wrapp .footer__sec03__info_block .contact a img {
+              display: block;
+              width: auto;
+              height: 40px;
+              padding: 5px 0;
+              float: left; }
+            .footer__sec03 .wrapp .footer__sec03__info_block .request a span, .footer__sec03 .wrapp .footer__sec03__info_block .contact a span {
+              display: block;
+              width: 130px;
+              height: 50px;
+              line-height: 25px;
+              text-align: right;
+              font-size: 28px;
+              font-size: 1.75rem;
+              color: #FFF;
+              float: left; }
+        .footer__sec03 .wrapp .footer__sec03__info_block .contact a {
+          background-color: #D53C50; }
+          .footer__sec03 .wrapp .footer__sec03__info_block .contact a span {
+            font-size: 24px;
+            font-size: 1.5rem; }
+            .footer__sec03 .wrapp .footer__sec03__info_block .contact a span .tel_number {
+              text-align: center;
+              font-size: 18px;
+              font-size: 1.125rem; }
+  .footer .copy {
+    width: 100%;
+    min-width: 1000px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    background-color: #333; }
+
+/* footerここまで */
+
+/*# sourceMappingURL=common.css.map */

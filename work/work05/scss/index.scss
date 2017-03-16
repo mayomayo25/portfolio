@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+@import "include/mixin";
+@import "include/variables";
+
+
+
+
+
+.title {
+    margin: 50px 0 0 0;
+
+    &__h1 {
+        width: 350px;
+        height: auto;
+        margin: 0 auto;
+
+        .image {
+            width: 350px;
+            height: auto;
+        }
+    }
+}// .title
+
+
+
+.menu {
+    margin: 20px 0 0 0;
+
+    &__nav {
+        width: 280px;
+        height: auto;
+        margin: 0 auto;
+
+        .lang_list {
+            &__item {
+                margin: 30px 0 0 0;
+                padding: 0 20px;
+                box-sizing: border-box;
+
+                .link {
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    color: #fff;
+                    background-color: $link_color1;
+                    @include font-size(24);
+                    @include middle-line(70);
+                }
+            }
+        }
+    }//  .menu__nav
+
+    &__config {
+        margin: 50px 0;
+        padding: 0 0 0 30px;
+        box-sizing: border-box;
+
+        .circle {
+            width: 80px;
+            height: 80px;
+            margin: 0 0 0 20px;
+            border-radius: 100%;
+            text-align: center;
+            background-color: $link_color1;
+            float: left;
+
+            &:first-child {
+                margin: 0;
+            }
+
+            &__link {
+                display: inline-block;
+
+                .image {
+                    width: 50px;
+                    height: 50px;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}//  .menu
+
+
+
+//  モーダルウィンドウ(config)
+// TODO: iziModalにclassを上書きされるため、idを使用
+#modal_config1,#modal_config3 {
+    height: 370px;
+}
+#modal_config2,#modal_config4 {
+    height: 300px;
+}
+
+#modal_config5 {
+    height: 550px;
+}
+
+#modal_config1,#modal_config2,#modal_config3,#modal_config4,#modal_config5 {
+    .user {
+
+        &__menu {
+            padding: 0 40px;
+            box-sizing: border-box;
+
+            &__list {
+                margin: 30px 0 0 0;
+
+                .link {
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    color: #fff;
+                    background-color: $link_color1;
+                    @include font-size(22);
+                    @include middle-line(60);
+
+                    &--login {
+                        background-color: $link_color2;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .signin,.signup,.logout {
+        padding: 0 40px;
+        box-sizing: border-box;
+        @include font-size(14);
+
+        &__row {
+            margin: 20px 0;
+
+            .label {
+                display: block;
+                margin: 0 0 5px 0;
+            }
+
+            .input {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+                @include font-size(20);
+            }
+
+            .link {
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                color: #fff;
+                background-color: $link_color1;
+                @include font-size(20);
+                @include middle-line(60);
+
+                &--login {
+                    background-color: $link_color2;
+                }
+            }
+        }
+    }
+
+    .past {
+        overflow-y: scroll;
+        height: 450px;
+        padding: 40px 0;
+        box-sizing: border-box;
+
+        .record_row {
+            width: 250px;
+            height: auto;
+            margin: 0 auto 30px auto;
+            border: 2px solid $link_color1;
+            box-sizing: border-box;
+            @include font-size(20);
+
+            &:last-child {
+                margin: 0 auto;
+            }
+
+            .date {
+                margin: 0 0 20px 0;
+                text-align: center;
+                color: #fff;
+                background-color: $link_color1;
+                @include middle-line(60);
+            }
+
+            .item {
+                &__row {
+                    width: 80%;
+                    margin: 0 auto 8px auto;
+                    border-bottom: 1px dotted $link_color1;
+                    @include middle-line(51);
+                    .image {
+                        display: block;
+                        width: 50px;
+                        margin: 0 40px 0 10px;
+                        float: left;
+                        @include middle-line(50);
+                    }
+
+                    .point {
+                        float: left;
+                        @include middle-line(50);
+                    }
+                }
+            }
+        }
+    }
+}//  .modal

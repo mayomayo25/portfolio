@@ -1,0 +1,599 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: '03スマートフォントUI';
+	src: url(../font/03スマートフォントUI.otf);
+}
+
+
+
+/* mixin */
+@mixin box-shadow( $h: 10px , $v: 10px , $b: 0px , $s: 0px , $c: #7f7f7f ) {
+	-webkit-box-shadow: $h $v $b $s $c;
+	-moz-box-shadow: $h $v $b $s $c;
+	box-shadow: $h $v $b $s $c;
+}
+
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	filter: alpha(opacity=($opacity * 100));
+}
+
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: ($size / 16px) * 1rem;
+}
+/* mixin */
+
+html {
+	@include font-size(14px);
+}
+
+body {
+	font-family: '03スマートフォントUI','游ゴシック', YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN', 'メイリオ',Meiryo, sans-serif;
+}
+
+
+
+
+
+/* headerここから */
+.header {
+	width: 100%;
+	height: auto;
+	
+	&__wrapp {
+		width: 1000px;
+		height: 170px;
+		margin: 0 auto;
+	
+		.title_block {
+			width: 540px;
+			height: 100%;
+			padding: 20px;
+			box-sizing: border-box;
+			float: left;
+			
+			span {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	
+		.support_block {
+			width: 460px;
+			height: 100%;
+			float: left;
+			
+			.help {
+				width: 200px;
+				height: 100%;
+				padding: 20px 0;
+				box-sizing: border-box;
+				float: left;
+				
+				li {
+					margin: 10px 0 0 0;
+					
+					&:last-child {
+						margin: 10px 0;
+					}
+					
+					a {
+						display: block;
+						text-decoration: none;
+						color: #000;
+						
+						&:hover figcaption {
+							color: #FF5855;
+						}
+						
+						figure {
+							position: relative;
+							width: auto;
+							height: 30px;
+							
+							.circle {
+								position: absolute;
+								width: 30px;
+								height: 30px;
+								border-radius: 15px;
+								background-color: #555;
+							}
+						
+							.icon {
+								position: absolute;
+								top: 7px;
+								left: 7px;
+								width: 16px;
+								height: 16px;
+								margin: auto;
+							}
+							
+							figcaption {
+								height: 30px;
+								padding: 0 0 0 40px;
+								line-height: 30px;
+								@include font-size(18px);
+								color: #555;
+							}
+						}
+					}
+				}
+			}
+			
+			.contact {
+				width: 260px;
+				height: 100%;
+				padding: 30px 20px 30px 10px;
+				box-sizing: border-box;
+				float: left;
+				
+				&__content {
+					position: relative;
+					width: 230px;
+					height: 100%;
+					padding: 10px;
+					border: 1px solid #AAA;
+					border-radius: 5px;
+					box-sizing: border-box;
+					
+					figure {
+						position: relative;
+						width: auto;
+						height: 30px;
+
+						.circle {
+							position: absolute;
+							width: 30px;
+							height: 30px;
+							border-radius: 15px;
+							background-color: #555;
+						}
+
+						.icon {
+							position: absolute;
+							top: 7px;
+							left: 7px;
+							width: 16px;
+							height: 16px;
+							margin: auto;
+						}
+
+						figcaption {
+							height: 30px;
+							line-height: 30px;
+							text-align: right;
+							@include font-size(26px);
+							font-weight: bold;
+							color: #555;
+						}
+					}
+					
+					a {
+						display: block;
+						width: 210px;
+						height: 50px;
+						margin: 8px 0 0 0;
+						padding: 10px;
+						border-radius: 5px;
+						box-sizing: border-box;
+						background-color: #D53C50;
+						
+						&:hover {
+							background-color: #D57B83;
+							cursor: pointer;
+						}
+						
+						img {
+							display: block;
+							width: 30px;
+							height: 30px;
+							float: left;
+						}
+						
+						span {
+							display: block;
+							width: 160px;
+							height: 30px;
+							line-height: 30px;
+							text-align: right;
+							@include font-size(17px);
+							color: #FFF;
+							float: left;
+						}
+					}
+				}
+			}
+		}
+	}//  .header__wrapp
+	
+	
+	&__nav {
+		width: 100%;
+		height: 70px;
+		background-color: #333;
+		
+		ul {
+			width: 1000px;
+			height: 100%;
+			margin: auto;
+			padding: 0 20px;
+			box-sizing: border-box;
+			
+			li {
+				float: left;
+				
+				a{
+					display: block;
+					height: 70px;
+					padding: 15px 0;
+					box-sizing: border-box;
+					transition: background-color 0.1s linear;
+					
+					&:hover {
+						background-color: #666;
+					}
+					
+					.border_unit,.border_unit__last {
+						width: 100%;
+						height: 40px;
+						padding: 0 19px;
+						border-left: 1px solid #AAA;
+						box-sizing: border-box;
+						
+						img {
+							display: block;
+							width: 40px;
+							height: 40px;
+							float: left;
+						}
+
+						span {
+							display: block;
+							height: 40px;
+							margin: 0 0 0 15px;
+							line-height: 40px;
+							letter-spacing: -1.3px;
+							color: #FFF;
+							float: left;
+						}
+					}
+					
+					.border_unit__last {
+						border-right: 1px solid #AAA;
+					}
+				}
+			}
+		}
+	}//  .header__nav
+	
+	
+	.key_visual {
+		width: 1000px;
+		height: 363.83px;
+		margin: 10px auto;
+		padding: 0 20px;
+		box-sizing: border-box;
+		
+		&__img {
+			width: 960px;
+			height: auto;
+		}
+	}
+}
+/* headerここまで */
+
+
+
+
+
+
+/* footerここから */
+.footer {
+	width: 100%;
+	height: auto;
+	
+	&__sec01 {
+		width: 100%;
+		min-width: 1000px;
+		height: auto;
+		border-bottom: 1px solid #FFF;
+		box-sizing: border-box;
+		background-color: #333;
+		
+		&__link_block {
+			width: 1000px;
+			height: auto;
+			margin: 0 auto;
+			padding: 40px 0 30px 0;
+			
+			.link_title {
+				padding: 0 0 40px 20px;
+				@include font-size(40px);
+				font-weight: bold;
+				color: #FFF;
+				letter-spacing: 3px;
+			}
+			
+			.link_contents {
+				
+				&__item {
+					width: 200px;
+					height: 200px;
+					float: left;
+					
+					.link {
+						display: block;
+						position: relative;
+						width: 100%;
+						height: 100%;
+						border-radius: 200px;
+						text-decoration: none;
+						transition: background-color 0.1s linear;
+						
+						&:hover {
+							background-color: #555;
+						}
+						
+						&__image {
+							display: block;
+							width: 100px;
+							height: 100px;
+							margin: 0 auto;
+							padding: 33px 0 0 0;
+						}
+						
+						&__label {
+							padding: 20px 0 0 0;
+							text-align: center;
+							color: #FFF;
+						}
+					}
+				}
+			}
+		}
+		
+		&__voice_block {
+			
+		}
+	}//  .footer__sec01
+	
+	
+	&__sec02 {
+		width: 100%;
+		min-width: 1000px;
+		height: auto;
+		box-sizing: border-box;
+		background-color: #333;
+		
+		&__voice_block {
+			width: 1000px;
+			height: auto;
+			margin: 0 auto;
+			padding: 40px 0 30px 0;
+			
+			.voice_title {
+				padding: 0 0 30px 20px;
+				@include font-size(40px);
+				font-weight: bold;
+				color: #FFF;
+				letter-spacing: 3px;
+			}
+			
+			.voice_title_hint {
+				padding: 0 0 0 20px;
+				@include font-size(20px);
+				color: #FFF;
+			}
+			
+			.voice_contents {
+				
+				.item {
+					width: 500px;
+					float: left;
+					
+					&__user_name {
+						margin: 30px 0 0 50px;
+						@include font-size(20px);
+						color: #FFF;
+					}
+					
+					&__balloon {
+						position: relative;
+						width: 460px;
+						height: 170px;
+						margin: 30px 0 0 20px;
+						background-color: #FFF;
+						
+						.left {
+							width: 180px;
+							height: 100%;
+							float: left;
+							
+							.evaluation {
+								padding: 20px 0 15px 0;
+								text-align: center;
+								
+								&__image {
+									width: 100px;
+									height: auto;
+								}
+							}
+							
+							.user {
+								text-align: center;
+							}
+						}
+						
+						.right {
+							width: 280px;
+							height: 100%;
+							padding: 0 20px 0 10px;
+							box-sizing: border-box;
+							float: left;
+							
+							p {
+								line-height: 15px;
+								@include font-size(14px);
+								
+								span {
+									display: block;
+									
+									&:first-child {
+										padding: 20px 0 15px 0;
+									}
+								}
+							}
+						}
+					}
+					
+					&__balloon:before {
+						content: "";
+						position: absolute;
+						top: -15px;
+						left: 50px;
+						margin-left: -15px;
+						width: 0;
+						height: 0;
+						border-bottom: 15px solid #FFF;
+						border-left: 15px solid transparent;
+						border-right: 15px solid transparent;
+					}
+				}
+			}
+		}//  .footer__sec02__voice_block
+	}//  .footer__sec02
+	
+	
+	&__sec03 {
+		width: 100%;
+		min-width: 1000px;
+		height: auto;
+		margin: 0 auto;
+		box-sizing: border-box;
+		background-color: #FFF;
+		
+		.wrapp {
+			width: 1000px;
+			height: auto;
+			margin: 0 auto;
+		
+			.footer__sec03__nav_block {
+				width: 700px;
+				height: auto;
+				margin: 20px 0;
+				@include font-size(18px);
+				float: left;
+
+				.footer_nav01,.footer_nav02 {
+					margin: 0 20px;
+					border-bottom: 1px solid #AAA;
+
+					ul {
+
+						li {
+							padding: 20px 40px 15px 0;
+							box-sizing: border-box;
+							float: left;
+
+							a {
+								text-decoration: none;
+								color: #000;
+
+								&:hover {
+									text-decoration: underline;
+									color: #FF5855;
+								}
+							}
+						}
+					}
+				}
+
+				.footer_nav02 {
+					border-bottom: none;
+				}
+			}//  .footer__sec03__nav_block
+
+
+			.footer__sec03__info_block {
+				width: 300px;
+				height: auto;
+				padding: 0 20px 0 0;
+				box-sizing: border-box;
+				float: left;
+
+				.request,.contact {
+					width: 230px;
+					height: 70px;
+					margin: 0 0 0 auto;
+
+					a {
+						display: block;
+						width: 100%;
+						height: 100%;
+						margin: 15px auto 0 auto;
+						padding: 10px 30px;
+						border-radius: 5px;
+						box-sizing: border-box;
+						background-color: #D53C50;
+						transition: background-color 0.2s linear;
+
+						&:hover {
+							background-color: #D57B83;
+						}
+
+						img {
+							display: block;
+							width: auto;
+							height: 40px;
+							padding: 5px 0;
+							float: left;
+						}
+
+						span {
+							display: block;
+							width: 130px;
+							height: 50px;
+							line-height: 25px;
+							text-align: right;
+							@include font-size(28px);
+							color: #FFF;
+							float: left;
+						}
+					}
+				}
+
+				.contact {
+
+					a {
+						background-color: #D53C50;
+						//赤系background-color: #FF5855;
+
+						span {
+							@include font-size(24px);
+
+							.tel_number {
+								text-align: center;
+								@include font-size(18px);
+							}
+						}
+					}
+				}
+			}
+		}
+	}//  .footer__sec03
+	
+	
+	.copy {
+		width: 100%;
+		min-width: 1000px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		color: #FFF;
+		background-color: #333;
+	}
+}
+/* footerここまで */

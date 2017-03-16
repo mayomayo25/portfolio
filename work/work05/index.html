@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <!-- ++++++++++++++++++++++++++++++-->
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
+    <link rel="stylesheet" href="css/iziModal.min.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- ++++++++++++++++++++++++++++++-->
+    <script src="components/loader.js"></script>
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/vendor/animsition.min.js"></script>
+    <script src="js/vendor/iziModal.min.js"></script>
+    <script src="js/vendor/sweetalert.min.js"></script>
+    <script src="js/vendor/b64utils.js"></script>
+    <!-- ++++++++++++++++++++++++++++++-->
+    <title>トップメニュー</title>
+    <!-- ++++++++++++++++++++++++++++++-->
+  </head>
+  <body>
+    <section class="title animsition">
+      <h1 class="title__h1"><img class="image" src="img/akasatana_logo.png" alt="あかさたなぞるくんロゴ"></h1>
+    </section>
+    <section class="menu animsition">
+      <nav class="menu__nav">
+        <ul class="lang_list">
+          <li class="lang_list__item"><a class="link animsition-link" href="quiz.html?lang=word">ひらがな</a></li>
+          <!--li.lang_list__itema.link.animsition-link(href="quiz.html?lang=alphabet") えいご
+          -->
+          <!--li.lang_list__itema.link.animsition-link(href="quiz.html?lang=number") すうじ
+          -->
+          <li class="lang_list__item"><a class="link animsition-link" href="camera_top.html">カメラであそぶ</a></li>
+        </ul>
+      </nav>
+      <div class="menu__config clearfix">
+        <div class="circle"><a class="circle__link open_config" href="#"><img class="image" src="img/config.png" alt="設定アイコン"></a></div>
+        <!--.circle
+        a.circle__link.open_camera.animsition-link(href="camera_top.html")
+          img.image(src="img/camera.png" alt="カメラアイコン")
+        -->
+      </div>
+    </section>
+    <div class="modal" id="modal_config1" data-izimodal-group="group1" data-izimodal-loop="" data-izimodal-title="アカウント設定" data-izimodal-subtitle="ログイン">
+      <ul class="signin">
+        <li class="signin__row">
+          <label class="label" for="">ニックネームをにゅうりょくしてね</label>
+          <input class="input" id="name" type="input">
+        </li>
+        <li class="signin__row">
+          <label class="label" for="">パスワードをにゅうりょくしてね</label>
+          <input class="input" id="password" type="password">
+        </li>
+        <li class="signin__row"><a class="link link--login" id="signin" href="#">ログイン</a></li>
+      </ul>
+    </div>
+    <div class="modal" id="modal_config2" data-izimodal-group="group1" data-izimodal-loop="" data-izimodal-title="アカウント設定" data-izimodal-subtitle="下記メニューから選択してください">
+      <div class="user">
+        <ul class="user__menu">
+          <li class="user__menu__list"><a class="link link--login modal_prev" href="#" data-izimodal-prev="">ログイン</a></li>
+          <li class="user__menu__list"><a class="link regist modal_next" href="#" data-izimodal-next="">ユーザとうろく</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal" id="modal_config3" data-izimodal-group="group1" data-izimodal-loop="" data-izimodal-title="アカウント設定" data-izimodal-subtitle="ユーザ登録">
+      <ul class="signup">
+        <li class="signup__row">
+          <label class="label" for="">ニックネームをにゅうりょくしてね</label>
+          <input class="input" id="name" type="input">
+        </li>
+        <li class="signup__row">
+          <label class="label" for="">パスワードをにゅうりょくしてね</label>
+          <input class="input" id="password" type="password">
+        </li>
+        <li class="signup__row"><a class="link" id="signup" href="#">アカウントとうろく</a></li>
+      </ul>
+    </div>
+    <div class="modal" id="modal_config4" data-izimodal-loop="" data-izimodal-title="アカウント設定" data-izimodal-subtitle="ログアウト">
+      <ul class="logout">
+        <li class="logout__row"><a class="link" id="logout" href="#">ログアウト</a></li>
+        <li class="logout__row"><a class="link" id="past_result" href="#">かこのけっか</a></li>
+      </ul>
+    </div>
+    <div class="modal" id="modal_config5" data-izimodal-loop="" data-izimodal-title="過去の点数" data-izimodal-subtitle="過去の成績を確認することが出来ます">
+      <ul class="past" id="past"></ul>
+    </div>
+    <div id="modal_alert" data-izimodal-title="ここをクリックして始めましょう！" data-izimodal-subtitle="15秒で非表示になります"></div>
+    <div id="login_success" data-izimodal-title="" data-izimodal-subtitle="あかさたなぞるくんより"></div>
+    <div id="login_fail" data-izimodal-title="" data-izimodal-subtitle="あかさたなぞるくんより"></div>
+    <div id="logout_alert" data-izimodal-title="" data-izimodal-subtitle="あかさたなぞるくんより"></div>
+  </body>
+  <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
+</html>

@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/* mixin */
+/* mixin */
+/* articleここから */
+.article {
+  width: 100%;
+  height: auto;
+  padding: 0 0 80px 0;
+  box-sizing: border-box;
+  color: #333; }
+  .article .key_visual {
+    width: 1000px;
+    height: 192px;
+    margin: 40px auto;
+    padding: 0 20px;
+    box-sizing: border-box; }
+    .article .key_visual img {
+      display: block;
+      width: 960px;
+      height: auto; }
+  .article .content_title {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 20px 50px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 50px;
+    font-size: 3.125rem;
+    font-weight: bold; }
+    .article .content_title .en {
+      font-size: 20px;
+      font-size: 1.25rem;
+      font-weight: none; }
+  .article__sec01, .article__sec02, .article__sec03 {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; }
+    .article__sec01__title, .article__sec02__title, .article__sec03__title {
+      padding: 50px 0 30px 0;
+      border-bottom: 1px solid #333;
+      font-size: 18px;
+      font-size: 1.125rem; }
+      .article__sec01__title span, .article__sec02__title span, .article__sec03__title span {
+        font-size: 36px;
+        font-size: 2.25rem;
+        font-weight: bold;
+        background: linear-gradient(transparent 70%, #FADC32 20%); }
+  .article__sec01__title {
+    border-top: 1px solid #333; }
+  .article__sec01__wrapp {
+    width: 960px;
+    height: auto;
+    padding: 50px 0 30px 0; }
+    .article__sec01__wrapp .left_plan, .article__sec01__wrapp .right_plan {
+      width: 350px;
+      height: 280px;
+      border-radius: 0 0 5px 5px;
+      box-sizing: border-box;
+      background-color: #FAFAFA;
+      float: left; }
+      .article__sec01__wrapp .left_plan h4, .article__sec01__wrapp .right_plan h4 {
+        height: 45px;
+        padding: 15px 0;
+        border-top: 1px solid #FCB424;
+        border-right: 1px solid #FCB424;
+        border-left: 1px solid #FCB424;
+        line-height: 15px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 18px;
+        font-size: 1.125rem;
+        background-color: #FCB424;
+        color: #FFF; }
+      .article__sec01__wrapp .left_plan__main, .article__sec01__wrapp .right_plan__main {
+        height: 235px;
+        border-right: 1px solid #CCC;
+        border-bottom: 1px solid #CCC;
+        border-left: 1px solid #CCC;
+        border-radius: 0 0 5px 5px;
+        box-sizing: border-box; }
+        .article__sec01__wrapp .left_plan__main .price, .article__sec01__wrapp .right_plan__main .price {
+          width: 260px;
+          height: 90px;
+          margin: 0 auto 19px auto;
+          padding: 20px 0 0 0;
+          border-bottom: 1px dotted #AAA;
+          box-sizing: border-box; }
+          .article__sec01__wrapp .left_plan__main .price__icon, .article__sec01__wrapp .right_plan__main .price__icon {
+            display: block;
+            width: 50px;
+            height: 50px;
+            padding: 7px;
+            border-radius: 25px;
+            box-sizing: border-box;
+            background-color: #FCB424;
+            float: left; }
+            .article__sec01__wrapp .left_plan__main .price__icon img, .article__sec01__wrapp .right_plan__main .price__icon img {
+              width: 36px;
+              height: 36px; }
+          .article__sec01__wrapp .left_plan__main .price__main, .article__sec01__wrapp .right_plan__main .price__main {
+            display: block;
+            width: 210px;
+            height: 50px;
+            line-height: 50px;
+            box-sizing: border-box;
+            text-align: right;
+            font-size: 40px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #FCB424;
+            float: left; }
+        .article__sec01__wrapp .left_plan__main .word, .article__sec01__wrapp .right_plan__main .word {
+          width: 260px;
+          height: auto;
+          margin: 0 auto 15px auto; }
+          .article__sec01__wrapp .left_plan__main .word p, .article__sec01__wrapp .right_plan__main .word p {
+            line-height: 20px;
+            text-align: justify;
+            text-justify: distribute;
+            font-size: 16px;
+            font-size: 1rem; }
+        .article__sec01__wrapp .left_plan__main .request_link, .article__sec01__wrapp .right_plan__main .request_link {
+          width: 260px;
+          margin: 0 auto;
+          text-align: right; }
+          .article__sec01__wrapp .left_plan__main .request_link a, .article__sec01__wrapp .right_plan__main .request_link a {
+            text-decoration: none;
+            font-size: 14px;
+            font-size: 0.875rem;
+            font-weight: bold;
+            color: #333; }
+            .article__sec01__wrapp .left_plan__main .request_link a:hover, .article__sec01__wrapp .right_plan__main .request_link a:hover {
+              color: #D53047; }
+            .article__sec01__wrapp .left_plan__main .request_link a span, .article__sec01__wrapp .right_plan__main .request_link a span {
+              background: linear-gradient(transparent 70%, #FADC32 20%); }
+    .article__sec01__wrapp .left_plan {
+      margin: 0 20px 0 110px; }
+    .article__sec01__wrapp .right_plan {
+      margin: 0 110px 0 20px; }
+  .article__sec02__wrapp {
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0 30px 0; }
+    .article__sec02__wrapp .left_block, .article__sec02__wrapp .right_block {
+      height: 240px;
+      float: left; }
+    .article__sec02__wrapp .left_block {
+      width: 400px;
+      padding: 0 20px 0 40px;
+      box-sizing: border-box; }
+      .article__sec02__wrapp .left_block span {
+        display: block;
+        height: 240px;
+        background-color: #FCB424; }
+    .article__sec02__wrapp .right_block {
+      width: 500px;
+      padding: 10px 40px 10px 20px;
+      box-sizing: border-box; }
+      .article__sec02__wrapp .right_block h4 {
+        padding: 0 0 20px 0;
+        line-height: 40px;
+        font-size: 32px;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #FCB424;
+        letter-spacing: -1px; }
+        .article__sec02__wrapp .right_block h4 span {
+          display: block; }
+          .article__sec02__wrapp .right_block h4 span:last-child {
+            padding: 0 0 0 100px;
+            box-sizing: border-box; }
+      .article__sec02__wrapp .right_block .word {
+        line-height: 20px;
+        text-align: justify;
+        text-justify: distribute;
+        font-size: 16px;
+        font-size: 1rem; }
+  .article__sec03__wrapp {
+    width: 800px;
+    height: auto;
+    margin: 0 auto; }
+    .article__sec03__wrapp .flow {
+      height: 50px;
+      margin: 20px 0 0 0; }
+      .article__sec03__wrapp .flow__left, .article__sec03__wrapp .flow__right {
+        height: 100%;
+        border: 1px solid #CCC;
+        box-sizing: border-box;
+        float: left; }
+      .article__sec03__wrapp .flow__left {
+        width: 295px;
+        margin: 0 5px 0 0; }
+        .article__sec03__wrapp .flow__left .number {
+          width: 30px;
+          height: 30px;
+          margin: 9px 0 9px 9px;
+          border-radius: 15px;
+          line-height: 30px;
+          text-align: center;
+          font-size: 20px;
+          font-size: 1.25rem;
+          font-weight: bold;
+          background-color: #FCB424;
+          color: #FFF;
+          float: left; }
+        .article__sec03__wrapp .flow__left .heading {
+          height: 48px;
+          margin: 0 0 0 20px;
+          line-height: 48px;
+          font-size: 20px;
+          font-size: 1.25rem;
+          font-weight: bold;
+          float: left; }
+      .article__sec03__wrapp .flow__right {
+        width: 500px; }
+        .article__sec03__wrapp .flow__right .text {
+          height: 48px;
+          margin: 0 0 0 20px;
+          line-height: 48px;
+          font-size: 18px;
+          font-size: 1.125rem; }
+    .article__sec03__wrapp .more {
+      margin: 20px 0 0 0;
+      text-align: right; }
+      .article__sec03__wrapp .more a {
+        text-decoration: none;
+        font-size: 18px;
+        font-size: 1.125rem;
+        font-weight: bold;
+        color: #333; }
+        .article__sec03__wrapp .more a:hover {
+          color: #D53047; }
+          .article__sec03__wrapp .more a:hover span {
+            background: linear-gradient(transparent 100%, #FADC32 20%); }
+        .article__sec03__wrapp .more a span {
+          background: linear-gradient(transparent 70%, #FADC32 20%); }
+
+/* articleここまで */
+
+/*# sourceMappingURL=plan.css.map */

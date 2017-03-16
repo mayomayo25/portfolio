@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* mixin */
+/* mixin */
+/* articleここから */
+.article {
+    width: 100%;
+}
+    
+    article h2.contents_title{
+        width: 1000px;
+        height: auto;
+        /* margin: 272px auto 0; */
+		margin: 90px auto 0;
+        padding: 0 20px 50px 20px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 3.125rem;
+        font-weight: bold; 
+    }
+        
+        article h2.contents_title span.en{
+            font-size: 1.25rem;
+        }
+        
+        
+        
+    article .container{
+        width: 960px;
+        margin: 100px auto 150px auto;
+        line-height: 1.5em;
+    }
+        
+        article .container #acMenu{
+            margin: 0 20px;
+        }
+            
+            article .container #acMenu dt{
+                display:block;
+                margin-top: 50px;
+                padding: 20px 30px;
+                border-left: 30px solid #FF7575;
+                box-sizing: border-box;
+                cursor:pointer;
+            }
+            
+            article .container #acMenu dt:hover{
+                padding-bottom: 19px;
+                border-bottom: 1px solid #FF7575;
+            }
+                
+                article .container #acMenu dd{
+                    display:none;
+                    margin-top: 50px;
+                    margin-left: 45px;
+                    border: 1px solid #666;
+                    background-color: #f8f8f8;
+                }
+                    
+                    article .container #acMenu dd span.answer{
+                        display: block;
+                        margin: 20px 30px;
+                    }
+                        
+                        article .container #acMenu dd span.answer a{
+                            text-decoration: none;
+                            color: #000;
+                        }
+                        
+                        article .container #acMenu dd span.answer a:hover{
+                            text-decoration: underline;
+                            color: #D57B83;
+                        }
+/* articleここまで */
+/*# sourceMappingURL=index.css.map */

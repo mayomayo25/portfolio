@@ -1,0 +1,35 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    // ++++++++++++++++++++++++++++++
+    link(rel="stylesheet" href="components/loader.css")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/animsition.min.css")
+    link(rel="stylesheet" href="css/iziModal.min.css")
+    link(rel="stylesheet" href="css/sweetalert.css")
+    link(rel="stylesheet" href="css/style.css")
+    link(rel="stylesheet" href="css/camera_top.css")
+    // ++++++++++++++++++++++++++++++
+    script(src="components/loader.js")
+    script(src="js/vendor/jquery-1.11.2.min.js")
+    script(src="js/vendor/animsition.min.js")
+    script(src="js/vendor/iziModal.min.js")
+    script(src="js/vendor/b64utils.js")
+    script(src="js/vendor/encoding.min.js")
+    script(src="js/vendor/jquery.cookie.js")
+    script(src="js/vendor/sweetalert.min.js")
+    // ++++++++++++++++++++++++++++++
+    title canvasで色取得
+    // ++++++++++++++++++++++++++++++
+  body
+    header.header
+      h1 あかさたなぞるくん
+    section.wrapper.animsition
+      h2.heading カメラモード
+      .photo_result#photo_result
+        img.image(src="https://placehold.jp/40/cccccc/ffffff/290x380.png?text=%E3%82%AB%E3%83%A1%E3%83%A9%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E6%96%87%E5%AD%97%E3%82%92%E6%92%AE%E5%BD%B1%E3%81%97%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%EF%BC%81&css=%7B%22padding%22%3A%22%200%2030px%22%2C%22box-sizing%22%3A%22%20border-box%22%7D" alt="")
+      a.btn.camera#camera(href="#") カメラでさつえい
+      include include/_camera_top_modal.pug
+  script(src="js/main.js")
+  script(src="js/camera_top.js")

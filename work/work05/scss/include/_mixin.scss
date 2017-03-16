@@ -1,0 +1,203 @@
+//  name   : _mixin.scss
+//  writer : DaichiSeki
+//  date   : 2017/01/11〜
+//  各種mixinはここへ
+@charset "UTF-8";
+
+
+//  IE8以下にfilter
+//  使用時は「@include opacity(0.8)」など
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    filter: alpha(opacity=($opacity * 100));
+}
+/////////////////////////////////////////////////////////
+
+
+
+//  border-radiusの設定
+//  使用時は「@include border-radius(10)」
+//  もしくは「@include border-radius-per(100%)」
+@mixin border-radius($radius) {
+          border-radius: $radius + px;
+}
+@mixin border-radius-per($radius) {
+          border-radius: $radius;
+}
+/////////////////////////////////////////////////////////
+
+
+
+//  円形に変更
+//  使用時は「@include circle()」
+@mixin circle {
+    @include border-radius(100%);
+}
+/////////////////////////////////////////////////////////
+
+
+
+//  ブラウザによってフォントサイズの単位変更
+//  使用時は「@include font-size(16)」
+@mixin font-size($size, $base: 16) {
+    font-size: $size + px;
+    font-size: ($size / $base) + rem;
+}
+
+
+
+/////////////////////////////////////////////////////////
+
+
+
+// 第一引数で基準となる画面幅のフォントサイズ、第二引数で基準となる画面幅を入力
+@function get_vw($size, $viewport:320){
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+
+@mixin fz_vw($font_size:10){
+  font-size: $font_size * 1px;
+  font-size: get_vw($font_size);
+}
+
+
+
+/////////////////////////////////////////////////////////
+
+
+
+//  リンクカラーの設定
+//  使用時は「@include link-color(#345fc9)」
+@mixin link-color($color) {
+     color: $color;
+
+     &:hover, &:active, &:focus {
+         color: lighten($color, 20%);
+     }
+}
+/////////////////////////////////////////////////////////
+
+
+
+//  ボックス内の上下中央へ
+//  使用時は「@include middle-ine(40)」
+@mixin middle-line($height){
+    height: $height + px;
+    line-height: $height + px;
+}
+/////////////////////////////////////////////////////////
+
+
+
+//  3点リーダ
+//  使用時は「@include line-clamp(3)」
+@mixin line-clamp($size){
+    display: box;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: $size;
+    -webkit-box-orient: vertical;
+}
+/////////////////////////////////////////////////////////
+
+
+
+//  吹き出し
+//  使用時は「@include arrow(#ccc, 10, 30%)」
+@mixin arrow($color, $size, $position) {
+    position: relative;
+    background: $color;
+
+    &:after{
+        bottom: 100%;
+        left: $position;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-bottom-color: $color;
+        border-width: $size + px;
+        margin-left: -$size + px;
+    }
+}
+/////////////////////////////////////////////////////////
+
+
+
+//  左右が丸い長方形
+//  使用時は「@include rounded(40)」
+@mixin rounded($height, $display: inline-block){
+    $space: round($height / 2) + px;
+    display: $display;
+    padding: 0 $space;
+    @include border-radius($height);
+    @include middle-line($height);
+}
+
+
+
+//  positionを使ったレイアウト
+//  使用時は「@include absolute-top-left(20px, 30px)」
+//  もしくは「@include absolute-top-left(10%, 50%)」
+@mixin absolute-top-left($top: 0, $left: 0) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+@mixin absolute-top-right($top: 0, $right: 0) {
+    position: absolute;
+    top: $top;
+    right: $right;
+}
+@mixin absolute-bottom-left($bottom: 0, $left: 0) {
+    position: absolute;
+    bottom: $bottom;
+    left: $left;
+}
+@mixin absolute-bottom-right($bottom: 0, $right: 0) {
+    position: absolute;
+    bottom: $bottom;
+    right: $right;
+}
+/////////////////////////////////////////////////////////
+
+
+
+//  グラデーション
+//  使用時は「@include gradient(#ff00ff, #ff00cc, vertical)」
+@mixin gradient($start-color, $end-color, $orientation) {
+    background: $start-color;
+    @if $orientation == vertical {
+        // vertical
+        background: -moz-linear-gradient(top,  $start-color 0%, $end-color 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start-color), color-stop(100%,$end-color));
+        background: -webkit-linear-gradient(top,  $start-color 0%,$end-color 100%);
+        background: -o-linear-gradient(top,  $start-color 0%,$end-color 100%);
+        background: -ms-linear-gradient(top,  $start-color 0%,$end-color 100%);
+        background: linear-gradient(to bottom,  $start-color 0%,$end-color 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=0 );
+    }
+    @else if $orientation == horizontal {
+        // horizontal
+        background: -moz-linear-gradient(left,  $start-color 0%, $end-color 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,$start-color), color-stop(100%,$end-color));
+        background: -webkit-linear-gradient(left,  $start-color 0%,$end-color 100%);
+        background: -o-linear-gradient(left,  $start-color 0%,$end-color 100%);
+        background: -ms-linear-gradient(left,  $start-color 0%,$end-color 100%);
+        background: linear-gradient(to right,  $start-color 0%,$end-color 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 );
+    }
+    @else{
+        // radial
+        background: -moz-radial-gradient(center, ellipse cover,  $start-color 0%, $end-color 100%);
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$start-color), color-stop(100%,$end-color));
+        background: -webkit-radial-gradient(center, ellipse cover,  $start-color 0%,$end-color 100%);
+        background: -o-radial-gradient(center, ellipse cover,  $start-color 0%,$end-color 100%);
+        background: -ms-radial-gradient(center, ellipse cover,  $start-color 0%,$end-color 100%);
+        background: radial-gradient(ellipse at center,  $start-color 0%,$end-color 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 );
+    }
+}

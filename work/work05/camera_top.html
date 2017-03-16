@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <!-- ++++++++++++++++++++++++++++++-->
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
+    <link rel="stylesheet" href="css/iziModal.min.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/camera_top.css">
+    <!-- ++++++++++++++++++++++++++++++-->
+    <script src="components/loader.js"></script>
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/vendor/animsition.min.js"></script>
+    <script src="js/vendor/iziModal.min.js"></script>
+    <script src="js/vendor/b64utils.js"></script>
+    <script src="js/vendor/encoding.min.js"></script>
+    <script src="js/vendor/jquery.cookie.js"></script>
+    <script src="js/vendor/sweetalert.min.js"></script>
+    <!-- ++++++++++++++++++++++++++++++-->
+    <title>canvasで色取得</title>
+    <!-- ++++++++++++++++++++++++++++++-->
+  </head>
+  <body>
+    <header class="header">
+      <h1>あかさたなぞるくん</h1>
+    </header>
+    <section class="wrapper animsition">
+      <h2 class="heading">カメラモード</h2>
+      <div class="photo_result" id="photo_result"><img class="image" src="https://placehold.jp/40/cccccc/ffffff/290x380.png?text=%E3%82%AB%E3%83%A1%E3%83%A9%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E6%96%87%E5%AD%97%E3%82%92%E6%92%AE%E5%BD%B1%E3%81%97%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%EF%BC%81&amp;css=%7B%22padding%22%3A%22%200%2030px%22%2C%22box-sizing%22%3A%22%20border-box%22%7D" alt=""></div><a class="btn camera" id="camera" href="#">カメラでさつえい</a>
+      <div class="modal" id="word_list_modal" data-izimodal-group="word_list_modal" data-izimodal-loop="" data-izimodal-title="単語一覧" data-izimodal-subtitle="検出した単語の一覧です">
+        <ul class="hiragana_list" id="list">
+          <!--li.hiragana_list__itema.link.animsition-link(href="#") もも
+          -->
+          <!--li.hiragana_list__itema.link.animsition-link(href="#") ももたろう
+          -->
+        </ul>
+      </div>
+    </section>
+  </body>
+  <script src="js/main.js"></script>
+  <script src="js/camera_top.js"></script>
+</html>

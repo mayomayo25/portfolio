@@ -1,0 +1,39 @@
+.modal#modal_config1(data-izimodal-group="group1" data-izimodal-loop="" data-izimodal-title="アカウント設定" data-izimodal-subtitle="ログイン")
+  ul.signin
+    li.signin__row
+      label.label(for="") ニックネームをにゅうりょくしてね
+      input.input#name(type="input")
+    li.signin__row
+      label.label(for="") パスワードをにゅうりょくしてね
+      input.input#password(type="password")
+    li.signin__row
+      a.link.link--login#signin(href="#") ログイン
+.modal#modal_config2(data-izimodal-group="group1" data-izimodal-loop="" data-izimodal-title="アカウント設定" data-izimodal-subtitle="下記メニューから選択してください")
+  .user
+    ul.user__menu
+      li.user__menu__list
+        a.link.link--login.modal_prev(href="#" data-izimodal-prev="") ログイン
+      li.user__menu__list
+        a.link.regist.modal_next(href="#" data-izimodal-next="") ユーザとうろく
+.modal#modal_config3(data-izimodal-group="group1" data-izimodal-loop="" data-izimodal-title="アカウント設定" data-izimodal-subtitle="ユーザ登録")
+  ul.signup
+    li.signup__row
+      label.label(for="") ニックネームをにゅうりょくしてね
+      input.input#name(type="input")
+    li.signup__row
+      label.label(for="") パスワードをにゅうりょくしてね
+      input.input#password(type="password")
+    li.signup__row
+      a.link#signup(href="#") アカウントとうろく
+.modal#modal_config4(data-izimodal-loop="" data-izimodal-title="アカウント設定" data-izimodal-subtitle="ログアウト")
+  ul.logout
+    li.logout__row
+      a.link#logout(href="#") ログアウト
+    li.logout__row
+      a.link#past_result(href="#") かこのけっか
+.modal#modal_config5(data-izimodal-loop="" data-izimodal-title="過去の点数" data-izimodal-subtitle="過去の成績を確認することが出来ます")
+  ul.past#past
+#modal_alert(data-izimodal-title="ここをクリックして始めましょう！" data-izimodal-subtitle="15秒で非表示になります")
+#login_success(data-izimodal-title="" data-izimodal-subtitle="あかさたなぞるくんより")
+#login_fail(data-izimodal-title="" data-izimodal-subtitle="あかさたなぞるくんより")
+#logout_alert(data-izimodal-title="" data-izimodal-subtitle="あかさたなぞるくんより")

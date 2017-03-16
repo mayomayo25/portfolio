@@ -1,0 +1,47 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    // ++++++++++++++++++++++++++++++
+    link(rel="stylesheet" href="components/loader.css")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/animsition.min.css")
+    link(rel="stylesheet" href="css/iziModal.min.css")
+    link(rel="stylesheet" href="css/sweetalert.css")
+    link(rel="stylesheet" href="css/style.css")
+    link(rel="stylesheet" href="css/index.css")
+    // ++++++++++++++++++++++++++++++
+    script(src="components/loader.js")
+    script(src="js/vendor/jquery-1.11.2.min.js")
+    script(src="js/vendor/animsition.min.js")
+    script(src="js/vendor/iziModal.min.js")
+    script(src="js/vendor/sweetalert.min.js")
+    script(src="js/vendor/b64utils.js")
+    // ++++++++++++++++++++++++++++++
+    title トップメニュー
+    // ++++++++++++++++++++++++++++++
+  body
+    section.title.animsition
+      h1.title__h1
+        img.image(src="img/akasatana_logo.png" alt="あかさたなぞるくんロゴ")
+    section.menu.animsition
+      nav.menu__nav
+        ul.lang_list
+          li.lang_list__item
+            a.link.animsition-link(href="quiz.html?lang=word") ひらがな
+          //li.lang_list__item
+            a.link.animsition-link(href="quiz.html?lang=alphabet") えいご
+          //li.lang_list__item
+            a.link.animsition-link(href="quiz.html?lang=number") すうじ
+          li.lang_list__item
+            a.link.animsition-link(href="camera_top.html") カメラであそぶ
+      .menu__config.clearfix
+        .circle
+          a.circle__link.open_config(href="#")
+            img.image(src="img/config.png" alt="設定アイコン")
+        //.circle
+          a.circle__link.open_camera.animsition-link(href="camera_top.html")
+            img.image(src="img/camera.png" alt="カメラアイコン")
+    include include/_index__modal.pug
+  script(src="js/main.js")
+  script(src="js/index.js")

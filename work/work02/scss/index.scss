@@ -1,0 +1,449 @@
+@charset "UTF-8";
+
+
+/* mixin */
+@mixin box-shadow( $h: 10px , $v: 10px , $b: 0px , $s: 0px , $c: #7f7f7f ) {
+	-webkit-box-shadow: $h $v $b $s $c;
+	-moz-box-shadow: $h $v $b $s $c;
+	box-shadow: $h $v $b $s $c;
+}
+
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	filter: alpha(opacity=($opacity * 100));
+}
+
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: ($size / 16px) * 1rem;
+}
+/* mixin */
+
+
+
+
+
+/* articleここから */
+//  ※囲いにclearfix
+.article {
+	width: 100%;
+	height: auto;
+	padding: 0 0 50px 0;
+	box-sizing: border-box;
+	background-image: url("../img/back_pattern.png");
+	
+	
+	.key_visual {
+		width: 1000px;
+		height: 363.83px;
+		margin: 10px auto;
+		padding: 0 20px;
+		box-sizing: border-box;
+		
+		&__img {
+			width: 960px;
+			height: auto;
+		}
+	}
+	
+	
+	.wrapp {
+		width: 1000px;
+		height: auto;
+		margin: 0 auto;
+		padding: 0 20px;
+		box-sizing: border-box;
+		
+		.sec_about {
+			width: 960px;
+			height: 400px;
+			margin: 0 auto;
+			
+			&__title {
+				margin: 60px auto 0 auto;
+				
+				.diagonal {
+					width: 100px;
+					height: 100px;
+					float: left;
+					
+					&:first-child {
+						margin: 0 0 0 50px;
+					}
+				}
+
+				h2 {
+					width: 660px;
+					margin: 0 auto;
+					text-align: center;
+					line-height: 50px;
+					@include font-size(40px);
+					font-weight: bold;
+					letter-spacing: -3px;
+					float: left;
+				}
+			}
+			
+			&__main {
+				width: 800px;
+				height: auto;
+				margin: 30px auto 0 auto;
+				
+				.word {
+					width: 600px;
+					height: auto;
+					line-height: 30px;
+					@include font-size(24px);
+					float: left;
+				}
+				
+				.image {
+					position: relative;
+					width: 200px;
+					height: 250px;
+					float: left;
+					
+					img {
+						position: absolute;
+						top: 0;
+						width: 200px;
+						height: auto;
+						border-radius: 100px;
+					}
+					
+					figcaption {
+						position: absolute;
+						top: 190px;
+						left: 15px;
+						width: 170px;
+						height: 50px;
+						line-height: 50px;
+						text-align: center;
+						@include font-size(20px);
+						background-color: #000;
+						color: #FFF;
+					}
+				}
+			}
+		}
+		
+		
+		//  asideここから
+		.side {
+			width: 300px;
+			height: auto;
+			float: left;
+			
+			&__contact {
+				width: 300px;
+				height: 280px;
+				border: 10px solid #EEE;
+				box-sizing: border-box;
+				background-color: #FFF;
+				
+				&__title {
+					width: 260px;
+					height: 40px;
+					margin: 10px auto 0 auto;
+					padding: 0 0 15px 0;
+					border-bottom: 1px dotted #AAA;
+					box-sizing: border-box;
+					text-align: center;
+					@include font-size(24px);
+					color: #333;
+				}
+				
+				ul {
+					
+					.row {
+						width: 260px;
+						height: 70px;
+						margin: 0 auto;
+						border-bottom: 1px dotted #AAA;
+						box-sizing: border-box;
+						
+						.side__contact__icon {
+							position: relative;
+							width: 40px;
+							height: 40px;
+							margin: 15px 0;
+							border-radius: 20px;
+							box-sizing: border-box;
+							background-color: #333;
+							float: left;
+							
+							img {
+								position: absolute;
+								top: 0;
+								right: 0;
+								bottom: 0;
+								left: 0;
+								width: 20px;
+								height: 20px;
+								margin: auto;
+							}
+						}
+						
+						.side__contact__word {
+							position: relative;
+							width: 220px;
+							height: 70px;
+							padding: 15px 10px;
+							box-sizing: border-box;
+							float: left;
+							
+							span {
+								display: block;
+								
+								&:first-child {
+									height: 15px;
+									@include font-size(15px);
+								}
+								
+								&:last-child {
+									height: 25px;
+									@include font-size(31px);
+									font-weight: bold;
+								}
+							}
+						}
+						
+						&:last-child {
+							height: 50px;
+							margin: 10px auto;
+							border-bottom: none;
+							
+							a {
+								position: relative;
+								display: block;
+								width: 260px;
+								height: 50px;
+								padding: 5px 10px;
+								border-radius: 5px;
+								box-sizing: border-box;
+								background-color: #D53C50;
+								color: #FFF;
+								transition: all 0.1s linear;
+								
+								&:hover {
+									background-color: #D57B83;
+								}
+								
+								img {
+									display: block;
+									width: 40px;
+									height: 40px;
+									float: left;
+								}
+								
+								span {
+									display: block;
+									width: 200px;
+									height: 40px;
+									padding: 0 0 0 10px;
+									box-sizing: border-box;
+									line-height: 40px;
+									text-align: right;
+									@include font-size(22px);
+									letter-spacing: -2px;
+									float: left;
+								}
+								
+							}
+						}
+					}//  .row
+				}
+			}//  .side__contact
+			
+			
+			&__news {
+				width: 300px;
+				height: auto;
+				margin: 20px 0 0 0;
+				
+				&__title {
+					height: 40px;
+					line-height: 40px;
+					text-align: center;
+					@include font-size(24px);
+					background-color: #333;
+					color: #FFF;
+					letter-spacing: 2px;
+				}
+				
+				ul {
+					padding: 0 0 10px 0;
+					border-bottom: 1px solid #333;
+					box-sizing: border-box;
+					
+					.row {
+						height: auto;
+						padding: 0 15px 15px 15px;
+						border-bottom: 1px dotted #AAA;
+						box-sizing: border-box;
+						
+						time {
+							display: block;
+							height: 40px;
+							line-height: 40px;
+							@include font-size(20px);
+							font-weight: bold;
+							letter-spacing: 3px;
+						}
+						
+						a {
+							@include font-size(18px);
+							text-decoration: none;
+							color: #333;
+							
+							&:hover {
+								text-decoration: underline;
+								color: #FF5855;
+							}
+						}
+					}
+					
+					.more_row {
+						
+						a {
+							display: block;
+							width: 100px;
+							height: 40px;
+							margin: 10px 0 0 auto;
+							line-height: 40px;
+							text-align: center;
+							text-decoration: none;
+							@include font-size(18px);
+							background-color: #333;
+							color: #FFF;
+							transition: all 0.1s linear;
+							
+							&:hover {
+								background-color: #555;
+							}
+						}
+					}
+				}
+			}
+			
+			
+			&__bana {
+				width: 300px;
+				height: auto;
+				margin: 20px 0;
+				
+				ul {
+					
+					.row {
+						height: 60px;
+						margin: 10px 0 0 0;
+						
+						a {
+							display: block;
+							width: 300px;
+							height: 60px;
+							border: 1px solid #777;
+							box-sizing: border-box;
+							text-align: center;
+							line-height: 60px;
+							text-decoration: none;
+							@include font-size(22px);
+							background-color: #FFF;
+							color: #000;
+							transition: all 0.2s linear;
+							
+							&:hover {
+								border: 1px solid #AAA;
+								color: #777;
+							}
+						}
+					}
+				}
+			}
+		}//  .side
+		
+		
+		.main_wrapp {
+			width: 660px;
+			height: auto;
+			padding: 0 0 0 30px;
+			box-sizing: border-box;
+			float: left;
+			
+			.reason,.merit,.scene {
+				
+				h2 {
+					padding: 30px 0;
+					border-top: 1px solid #333;
+					border-bottom: 1px solid #333;
+					font-family: 'Quicksand', "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+					
+					span {
+						display: block;
+						@include font-size(24px);
+						
+						&:last-child {
+							padding: 10px 0 0 0;
+							@include font-size(36px);
+							font-weight: bold;
+							letter-spacing: -2px;
+						}
+					}
+				}
+				
+				&__word {
+					padding: 20px 10px 60px 10px;
+					line-height: 30px;
+					text-align: justify;
+					text-justify: distribute;
+					@include font-size(20px);
+				}
+			}
+			
+			.scene {
+				
+				ul {
+					
+					.row {
+						width: 150px;
+						height: 200px;
+						margin: 0 5px;
+						padding: 20px 5px;
+						box-sizing: border-box;
+						float: left;
+						
+						&:first-child {
+							margin: 0 0 0 5px;
+						}
+						
+						&:last-child {
+							margin: 0 5px 0 0;
+						}
+						
+						figure {
+							
+							img {
+								width: 140px;
+								height: auto;
+								border-radius: 10px;
+								border: 1px #CCC solid;
+								box-sizing: border-box;
+							}
+							
+							figcaption {
+								display: inline-block;
+								width: 110px;
+								margin: 10px 15px 0 15px;
+								text-align: center;
+								@include font-size(18px);
+								font-weight: bold;
+								background: linear-gradient(transparent 60%, #FADC32 90%);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* articleここまで */

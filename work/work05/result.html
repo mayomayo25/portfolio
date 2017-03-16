@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <!-- ++++++++++++++++++++++++++++++-->
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/result.css">
+    <!-- ++++++++++++++++++++++++++++++-->
+    <script src="components/loader.js"></script>
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/vendor/animsition.min.js"></script>
+    <script src="js/vendor/sweetalert.min.js"></script>
+    <script src="js/vendor/b64utils.js"></script>
+    <script src="js/vendor/jquery.cookie.js"></script>
+    <!-- ++++++++++++++++++++++++++++++-->
+    <title>canvasで色取得</title>
+    <!-- ++++++++++++++++++++++++++++++-->
+  </head>
+  <body>
+    <header class="header">
+      <h1>あかさたなぞるくん</h1>
+    </header>
+    <section class="wrapper animsition">
+      <div class="grading">
+        <h2 class="heading">採点結果</h2>
+        <div class="main">
+          <div class="main__row clearfix">
+            <p class="label">1文字目</p>
+            <p class="point" id="point1">aa</p>
+          </div>
+          <div class="main__row clearfix">
+            <p class="label">2文字目</p>
+            <p class="point" id="point2"></p>
+          </div>
+          <div class="main__row clearfix">
+            <p class="label">3文字目</p>
+            <p class="point" id="point3"></p>
+          </div>
+          <div class="main__row clearfix">
+            <p class="label">4文字目</p>
+            <p class="point" id="point4"></p>
+          </div>
+          <div class="main__row clearfix">
+            <p class="label">5文字目</p>
+            <p class="point" id="point5"></p>
+          </div>
+        </div>
+        <div class="btn_block"><a class="btn result_db_set" id="result_db_set" href="#">けっかをほぞん</a><a class="btn restart animsition-link" id="restart" href="index.html">はじめから</a></div>
+      </div>
+    </section>
+  </body>
+  <script src="js/main.js"></script>
+  <script src="js/result.js"></script>
+</html>

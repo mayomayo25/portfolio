@@ -1,0 +1,310 @@
+@charset "UTF-8";
+/* mixin */
+/* mixin */
+/* articleここから */
+.article{
+    width: 100%;
+    height: auto;
+    padding: 0 0 80px 0;
+    box-sizing: border-box;
+    color: #333;
+}
+    
+    .article .key_visual{
+        width: 1000px;
+        height: 192px;
+        margin: 40px auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+        
+        .article .key_visual img{
+            display: block;
+            width: 960px;
+            height: auto;
+        }
+    
+    
+    
+    .article .content_title{
+        width: 1000px;
+        height: auto;
+        margin: 0 auto;
+        padding: 0 20px 50px 20px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 50px;
+        font-size: 3.125rem;
+        font-weight: bold;
+    }
+        
+        .article .content_title .en {
+            font-size: 1.25rem;
+        }
+    
+    
+    
+    .article__sec01, .article__sec02, .article__sec03{
+        width: 1000px;
+        height: auto;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+        
+        .article__sec01__title, .article__sec02__title, .article__sec03__title{
+            padding: 50px 0 30px 0;
+            border-bottom: 1px solid #333;
+            font-size: 18px;
+            font-size: 1.125rem;
+        }
+        
+        .article__sec01__title{
+            border-top: 1px #333 solid;
+        }
+        
+        
+        
+        .article__sec02 .sub_title{
+            margin-top: 50px;
+            margin-left: 40px;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+            
+        .article__sec01__title span, .article__sec02__title span, .article__sec03__title span{
+            font-size: 36px;
+            font-size: 2.25rem;
+            font-weight: bold;
+            background: linear-gradient(transparent 70%, #52DB00 20%); }
+        
+        
+        
+        .article__sec01__wrapp, .article__sec02__wrapp, .article__sec03__wrapp{
+            width: 900px;
+            height: auto;
+            margin: 0 auto;
+            padding: 50px 0 30px 0;
+        }
+            
+            .article__sec01__wrapp .left_block, .article__sec01__wrapp .right_block, .article__sec02__wrapp .left_block, .article__sec02__wrapp .right_block, .article__sec03__wrapp .left_block, .article__sec03__wrapp .right_block{
+                float: left;
+            }
+            
+            .article__sec01__wrapp .left_block, .article__sec02__wrapp .left_block, .article__sec03__wrapp .left_block{
+                position: relative;
+                width: 400px;
+                padding: 0 0px;
+                box-sizing: border-box;
+                text-align: center;
+            }
+                
+                .article__sec02__wrapp .left_block .block{
+                    display: block;
+                }
+                
+                .article__sec02__wrapp .left_block .block:first-child{
+                    margin-left: 10px;
+                }
+                
+                .article__sec02__wrapp .left_block .block:last-child{
+                    margin-left: 215px;
+                }
+                
+                
+                
+                .article__sec02__wrapp .left_block .figure_arrow_first{
+                    position: relative;
+                    width: 0;
+                    height: 0;
+                    margin-left: 185px;
+                    border: 20px solid transparent;
+                    border-top-color: #52DB00;
+                    transform: rotate(-45deg);
+                }
+                
+                .article__sec02__wrapp .left_block .figure_arrow_first:after{
+                    position: absolute;
+                    content: '';
+                    top: -39px;
+                    left: -10px;
+                    width: 20px;
+                    height: 20px;
+                    background: #52DB00;
+                }
+                
+                .article__sec02__wrapp .left_block .before{
+                    position: absolute;
+                    top: 50px;
+                    left: 220px;
+                    color: #00f;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                }
+                
+                .article__sec02__wrapp .left_block .after{
+                    position: absolute;
+                    top: 260px;
+                    left: 100px;
+                    color: #f00;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                }
+                    
+                .figure_arrow_second_left{
+                    position: relative;
+                    width: 0;
+                    height: 0;
+                    border: 20px solid transparent;
+                    border-bottom-width: 35px;
+                    border-bottom-color: #E51010;
+                    position: absolute;
+                    top: 0;
+                    left: 25px;
+                }
+                
+                .figure_arrow_second_left:after{
+                    position: absolute;
+                    content: '';
+                    top: 35px;
+                    left: -10px;
+                    width: 20px;
+                    height: 40px;
+                    background: linear-gradient(to bottom, #E51010, #DB710F);
+                }
+                
+                
+                
+                .figure_arrow_second_right{
+                    position: relative;
+                    width: 0;
+                    height: 0;
+                    border: 20px solid transparent;
+                    border-bottom-width: 35px;
+                    border-bottom-color: #E51010;
+                    position: absolute;
+                    top: 0;
+                    left: 68px;
+                }
+                
+                .figure_arrow_second_right:after{
+                    position: absolute;
+                    content: '';
+                    top: 35px;
+                    left: -10px;
+                    width: 20px;
+                    height: 40px;
+                    background: linear-gradient(to bottom, #E51010, #DB710F);
+                }
+                
+                
+                
+                .figure_text{
+                    position: absolute;
+                    top: 3px;
+                    left: 30px;
+                    color: #E51010;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                }
+                
+                
+                
+            .article__sec01__wrapp .right_block, .article__sec02__wrapp .right_block, .article__sec03__wrapp .right_block{
+                width: 500px;
+                padding: 10px 40px 10px 20px;
+                box-sizing: border-box;
+            }
+                
+                .article__sec01__wrapp .right_block h4, .article__sec02__wrapp .right_block h4, .article__sec03__wrapp .right_block h4{
+                    margin-top: 3px;
+                    padding-bottom: 20px;
+                    line-height: 40px;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color: #47b205;
+                    letter-spacing: -2px;
+                }
+                        
+                        .heading_img{
+                            width: 25px;
+                            float: left;
+                        }
+                        
+                        .heading_text{
+                            width: 415px;
+                            margin-top: 0;
+                            float: left;
+                        }
+                            
+                            .article__sec01__wrapp .right_block h4 span, .article__sec02__wrapp .right_block h4 span, .article__sec03__wrapp .right_block h4 span{
+                                display: block;
+                            }
+                            
+                            .article__sec01__wrapp .right_block h4 span:last-child, .article__sec02__wrapp .right_block h4 span:last-child, .article__sec03__wrapp .right_block h4 span:last-child{
+                                padding-left: 5px;
+                                box-sizing: border-box;
+                            }
+                            
+                            
+                            
+                    
+                    .word , .word_top , .word_middle , .word_bottom{
+                        margin-bottom: 30px;
+                        line-height: 1.5rem;
+                        text-align: justify;
+                        text-justify: distribute;
+                        font-size: 1rem;
+                    }
+                    
+                    .word_top{
+                        font-weight: bold;
+                    }
+                        
+                        em{
+                            color: #f00;
+                        }
+                        
+                        em.strong{
+                            font-weight: bold;
+                            font-size: 1.2rem;
+                        }
+                        
+                    .bold{
+                        font-weight: bold;
+                    }
+                    
+                    
+                    
+            .article__sec02 .arrow{
+                position: relative;
+                width: 0;
+                height: 0;
+                margin: 60px auto 0;
+                border: 60px solid transparent;
+                border-top-color: #f00;
+            }
+            
+            .article__sec02 .arrow:after{
+                position: absolute;
+                content: '';
+                top: -120px;
+                left: -30px;
+                width: 60px;
+                height: 60px;
+                background: #f00;
+            }
+            
+            
+            
+            .article__sec02 .exception{
+                margin-bottom: 60px;
+                line-height: 3.2rem;
+                font-weight: bold;
+                font-size: 2rem;
+            }
+                        
+                        
+/* articleここまで */
+
+/*# sourceMappingURL=flow.css.map */

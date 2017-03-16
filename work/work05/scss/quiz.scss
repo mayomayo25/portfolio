@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import "include/mixin";
+@import "include/variables";
+
+
+
+
+
+.header {
+    display: none;
+
+	h1 {
+		text-align: center;
+		color: #fff;
+		background-color: #1898e0;
+        @include font-size(20);
+        @include middle-line(60);
+	}
+}
+
+
+
+.wrapper {
+    margin: 30px 0 0 0;
+
+    .heading {
+        margin: 30px 0 10px 0;
+        text-align: center;
+        font-weight: normal;
+        background-color: #FFF;
+        @include font-size(24);
+        @include middle-line(80);
+    }
+
+    .canvas {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 302px;
+        margin: 30px auto 0 auto;
+
+        &__main {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: auto;
+            left: 0;
+            z-index: 3;
+            width: 302px;
+            height: 302px;
+            margin: auto;
+
+            .rgba_canvas {
+                border: 1px solid #AAA;
+            }
+        }
+
+        &__back {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: auto;
+            left: 0;
+            z-index: 2;
+            width: 300px;
+            height: 300px;
+            margin: auto;
+
+            .image {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+
+    .btn_block {
+
+        .btn {
+            display: block;
+            width: 300px;
+            height: 60px;
+            margin: 20px auto;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: $link_color1;
+            @include font-size(24);
+            @include middle-line(60);
+        }
+
+        .canvas_to_img {
+        }
+
+        .go_to_next {
+            margin: 20px auto 0 auto;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@font-face {
+  font-family: '03スマートフォントUI';
+  src: url("font/03スマートフォントUI.woff") format("woff"), url("font/03スマートフォントUI.otf") format("opentype"); }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none; }
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none; }
+
+body {
+  font-family: '03スマートフォントUI','游ゴシック', YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN', 'メイリオ',Meiryo, sans-serif;
+  font-size: 16px;
+  background-image: url(../img/back_pattern.png); }
+
+.js_d_none {
+  display: none; }
+
+.js_d_block {
+  display: block; }

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* mixin */
+/* mixin */
+/* articleここから */
+.article {
+    width: 100%;
+}
+    
+    article .container{
+        width: 960px;
+        margin: 100px auto 0 auto;
+        margin-bottom: 150px;
+        line-height: 1.5em;
+    }
+        
+        article .container .terms_box{
+            border-bottom: 2px #333 solid;
+        }
+        
+         article .container .terms_box:last-child{
+            border: 0;
+        }
+            
+             article .container .terms_box .terms_title{
+                margin-top: 40px;
+                margin-bottom: 40px;
+                font-size: 1.2em;
+                font-weight:bold;
+            }
+            
+             article .container .terms_box span{
+                display: block;
+                margin-bottom: 30px;
+            }
+/* articleここまで */
+
+/*# sourceMappingURL=index.css.map */

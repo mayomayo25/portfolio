@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@import "include/mixin";
+@import "include/variables";
+
+
+
+
+
+.header {
+    display: none;
+
+	h1 {
+		text-align: center;
+		color: #FFF;
+		background-color: #1898e0;
+        @include font-size(20);
+        @include middle-line(60);
+	}
+}
+
+
+
+.wrapper {
+    .grading {
+
+        .heading {
+            margin: 30px 0 10px 0;
+            text-align: center;
+            font-weight: normal;
+            background-color: #FFF;
+            @include font-size(24);
+            @include middle-line(80);
+        }
+
+        .main {
+            width: 300px;
+            height: auto;
+            margin: 0 auto;
+            padding: 10px 20px;
+            box-sizing: border-box;
+
+            &__row {
+                border-bottom: 1px solid #AAA;
+                @include font-size(16);
+                @include middle-line(60);
+
+                .label {
+                    width: 100px;
+                    height: 100%;
+                    padding: 0 0 0 10px;
+                    box-sizing: border-box;
+                    float: left;
+                }
+
+                .point {
+                    width: 160px;
+                    height: 100%;
+                    padding: 0 0 0 30px;
+                    box-sizing: border-box;
+                    float: left;
+                    @include font-size(28);
+                }
+            }
+        }//  .main
+
+
+
+        .btn_block {
+
+            .btn {
+                display: block;
+                width: 300px;
+                height: 60px;
+                margin: 20px auto;
+                text-align: center;
+                text-decoration: none;
+                color: #fff;
+                background-color: $link_color1;
+                @include font-size(24);
+                @include middle-line(60);
+            }
+        }//  .btn_block
+    }//  .grading
+}//  .wrapper

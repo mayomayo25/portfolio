@@ -1,0 +1,33 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    // ++++++++++++++++++++++++++++++
+    link(rel="stylesheet" href="components/loader.css")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/animsition.min.css")
+    link(rel="stylesheet" href="css/sweetalert.css")
+    link(rel="stylesheet" href="css/style.css")
+    link(rel="stylesheet" href="css/result.css")
+    // ++++++++++++++++++++++++++++++
+    script(src="components/loader.js")
+    script(src="js/vendor/jquery-1.11.2.min.js")
+    script(src="js/vendor/animsition.min.js")
+    script(src="js/vendor/sweetalert.min.js")
+    script(src="js/vendor/b64utils.js")
+    script(src="js/vendor/jquery.cookie.js")
+    // ++++++++++++++++++++++++++++++
+    title canvasで色取得
+    // ++++++++++++++++++++++++++++++
+  body
+    header.header
+      h1 あかさたなぞるくん
+    section.wrapper.animsition
+      .grading
+        h2.heading 採点結果
+        .main#grading_main
+        .btn_block
+          a#result_db_set.btn.result_db_set(href="#") 結果を保存
+          a#restart.btn.restart.animsition-link(href="index.html") はじめから
+  script(src="js/main.js")
+  script(src="js/camera_result.js")
