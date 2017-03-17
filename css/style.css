@@ -23,6 +23,9 @@ body {
     letter-spacing: 12px;
     color: #222;
     background-color: #eee;
+    box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.44);
     font-size: 50px;
     font-size: 3.125rem; }
   .section .content {
@@ -164,7 +167,10 @@ body {
   .sec02 .content__left .image {
     width: 70%;
     height: auto;
-    border-radius: 100%; }
+    border-radius: 100%;
+    box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.44); }
 
 .sec02 .content__right {
   width: 50%;
@@ -255,7 +261,7 @@ body {
       box-sizing: border-box;
       float: left;
       background-color: #333;
-      transition: all .2s ease-in; }
+      transition: all .2s linear; }
       .sec04 .content .list__item:first-child {
         margin-left: 0; }
       .sec04 .content .list__item:nth-child(3) {
@@ -266,10 +272,9 @@ body {
       .sec04 .content .list__item:nth-child(5) {
         margin-bottom: 0; }
       .sec04 .content .list__item:hover {
-        cursor: pointer;
-        transform: scale(1.1); }
+        cursor: pointer; }
         .sec04 .content .list__item:hover .icon {
-          transform: scale(1.1); }
+          transform: scale(1.2); }
       .sec04 .content .list__item .link {
         display: block;
         text-decoration: none; }
