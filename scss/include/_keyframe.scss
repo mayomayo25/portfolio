@@ -1,0 +1,63 @@
+//  name   : keyframe.scss
+//  writer : DaichiSeki
+//  date   : 2017/04/24〜
+@charset "UTF-8";
+
+@-webkit-keyframes a_overlay {
+	0% {
+		height: 0vh;
+		background-color: rgba(#333,0.0);
+	}
+	100% {
+		height: 100vh;
+		background-color: rgba(#000,0.8);
+	}
+}
+@keyframes a_overlay {
+	0% {
+		height: 0vh;
+		background-color: rgba(#333,0.0);
+	}
+	100% {
+		height: 100vh;
+		background-color: rgba(#000,0.8);
+	}
+}
+
+@-webkit-keyframes b_overlay {
+	0% {
+		height: 100vh;
+		background-color: rgba(#000,0.8);
+	}
+	100% {
+		height: 0vh;
+		background-color: rgba(#333,0.0);
+	}
+}
+@keyframes b_overlay {
+	0% {
+		height: 100vh;
+		background-color: rgba(#000,0.8);
+	}
+	100% {
+		height: 0vh;
+		background-color: rgba(#333,0.0);
+	}
+}
+
+@-webkit-keyframes blink{
+    0% {
+		opacity:0;
+	}
+    100% {
+		opacity:1;
+	}
+}
+@keyframes blink{
+    0% {
+		opacity:0;
+	}
+    100% {
+		opacity:1;
+	}
+}

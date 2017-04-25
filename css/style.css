@@ -1,4 +1,48 @@
 @charset "UTF-8";
+@-webkit-keyframes a_overlay {
+  0% {
+    height: 0vh;
+    background-color: rgba(51, 51, 51, 0); }
+  100% {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); } }
+
+@keyframes a_overlay {
+  0% {
+    height: 0vh;
+    background-color: rgba(51, 51, 51, 0); }
+  100% {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); } }
+
+@-webkit-keyframes b_overlay {
+  0% {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); }
+  100% {
+    height: 0vh;
+    background-color: rgba(51, 51, 51, 0); } }
+
+@keyframes b_overlay {
+  0% {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); }
+  100% {
+    height: 0vh;
+    background-color: rgba(51, 51, 51, 0); } }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 @font-face {
   font-family: 'MoonL';
   src: url(../font/MoonLight.otf); }
@@ -78,7 +122,7 @@ body {
   .sec01 .code {
     position: absolute;
     left: 200px;
-    width: 100%;
+    width: calc(100% - 200px);
     height: 100%;
     font-size: 14px;
     line-height: 1.8;
@@ -126,6 +170,22 @@ body {
       box-sizing: border-box; }
       .sec01 .code__main code {
         padding: 0; }
+        .sec01 .code__main code .cursor {
+          color: #4292d2; }
+      .sec01 .code__main .scroll_word {
+        z-index: 99;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 600px;
+        height: 200px;
+        margin: auto;
+        line-height: 200px;
+        text-align: center;
+        font-size: 50px;
+        color: #777; }
   .sec01 .global_menu {
     position: absolute;
     bottom: -60px;
@@ -272,7 +332,8 @@ body {
       .sec04 .content .list__item:nth-child(5) {
         margin-bottom: 0; }
       .sec04 .content .list__item:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        background-color: #222; }
         .sec04 .content .list__item:hover .icon {
           transform: scale(1.2); }
       .sec04 .content .list__item .link {
@@ -292,6 +353,51 @@ body {
           .sec04 .content .list__item .link .icon__image {
             width: auto;
             height: 100px; }
+
+.sec04 .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%; }
+  .sec04 .overlay__content {
+    display: none;
+    width: 900px;
+    height: 600px;
+    margin: 20vh auto 0 auto;
+    border-radius: 20px;
+    background-color: #fafafa; }
+    .sec04 .overlay__content .pdf_frame {
+      width: 800px;
+      height: 550px;
+      margin: 25px 50px; }
+  .sec04 .overlay__close {
+    display: none;
+    width: 200px;
+    height: 70px;
+    margin: 20px auto 0 auto;
+    line-height: 70px;
+    text-align: center;
+    background-color: #ff7c7c;
+    color: #fff; }
+
+.sec04 .a_overlay {
+  -webkit-animation: a_overlay 0.8s ease 0s 1 normal;
+  animation: a_overlay 0.8s ease 0s 1 normal;
+  animation-fill-mode: forwards; }
+
+.sec04 .b_overlay {
+  -webkit-animation: b_overlay 0.8s ease 0s 1 normal;
+  animation: b_overlay 0.8s ease 0s 1 normal;
+  animation-fill-mode: forwards; }
+
+.d_none {
+  display: none; }
+
+.d_block {
+  display: block; }
 
 .arrow_down {
   position: relative;
@@ -330,3 +436,8 @@ body {
   position: absolute;
   top: -9px;
   left: 5px; }
+
+.blinking {
+  -webkit-animation: blink 1.0s ease-in-out infinite alternate;
+  -moz-animation: blink 1.0s ease-in-out infinite alternate;
+  animation: blink 1.0s ease-in-out infinite alternate; }

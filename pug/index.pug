@@ -33,7 +33,7 @@ html(lang="ja")
               a.link.skills_link(href="#skills") SKILLS
             li.right_list__item
               a.link.works_link(href="#works") WORKS
-            li.right_list__item
+            //li.right_list__item
               a.link.contact_link(href="#contact") CONTACT
       section#about.section.sec02(data-5800="top:100%;" data-9800="top: 0%;" data-10500="top:0%;"  data-15500="top: -100%;")
         h2.heading2
@@ -44,7 +44,7 @@ html(lang="ja")
           .content__right(data-8000="transform:translate(130%,0);opacity:0;" data-9800="transform:translate(0%,0);opacity:1;")
             h3.heading3 関 大智 -Seki Daichi-
             p.sentence
-              | HAL名古屋WEB開発学科3年の学生です。
+              | HAL名古屋WEB開発学科4年の学生です。
               br
               | 趣味は旅行とサッカー観戦。
               br
@@ -84,37 +84,55 @@ html(lang="ja")
             li.list__item(data-14000="opacity: 0;" data-15500="opacity: 1;transform:translate(0,0%);" data-15800="transform:translate(0,-35%);" data-16100="transform:translate(0,0)")
               p.lang_name Atom
               img.image(src="img/icon_atom.svg" alt="atomロゴ")
-      section#works.section.sec04(data-16500="top:100%;" data-20500="top: 0%;" data-21500="top:0%;" data-27000="top: -100%;")
+      //section#works.section.sec04(data-16500="top:100%;" data-20500="top: 0%;" data-21500="top:0%;" data-27000="top: -100%;")
+      section#works.section.sec04(data-16500="top:100%;" data-20500="top: 0%;")
         h2.heading2
           span(data-17500="opacity: 0;" data-20500="opacity: 1;") WORKS
         .content(data-18500="opacity:0;" data-20500="opacity:1;")
           ul.list
-            li.list__item(data-21500="transform: scale(1);opacity: 1;" data-23000="transform: scale(0);opacity: 0;")
+            //li.list__item(data-21500="transform: scale(1);opacity: 1;" data-23000="transform: scale(0);opacity: 0;")
+            li.list__item
               a.link(href="work/work01/index.html" target="_blank")
                 p.work_title HAL幼稚園
                 p.icon
                   img.icon__image(src="img/icon_program_white.png" alt="コーディングアイコン")
-            li.list__item(data-22000="transform: scale(1);opacity: 1;" data-23500="transform: scale(0);opacity: 0;")
+              //span.link
+                p.work_title HAL幼稚園
+                p.icon
+                  img.icon__image(src="img/icon_program_white.png" alt="コーディングアイコン")
+            //li.list__item(data-22000="transform: scale(1);opacity: 1;" data-23500="transform: scale(0);opacity: 0;")
+            li.list__item
               a.link(href="work/work02/docs/index.html" target="_blank")
                 p.work_title 社歌PRO
                 p.icon
                   img.icon__image(src="img/icon_program_white.png" alt="コーディングアイコン")
-            li.list__item(data-22500="transform: scale(1);opacity: 1;" data-24000="transform: scale(0);opacity: 0;")
+            //li.list__item(data-22500="transform: scale(1);opacity: 1;" data-24000="transform: scale(0);opacity: 0;")
+            li.list__item
               a.link(href="work/work03/work03.png" target="_blank")
                 p.work_title CafeDePARIS
                 p.icon
                   img.icon__image(src="img/icon_design_white.png" alt="デザインアイコン")
-            li.list__item(data-23000="transform: scale(1);opacity: 1;" data-24500="transform: scale(0);opacity: 0;")
+            //li.list__item(data-23000="transform: scale(1);opacity: 1;" data-24500="transform: scale(0);opacity: 0;")
+            li.list__item
               a.link(href="work/work04/work04.png" target="_blank")
                 p.work_title Cuillere
                 p.icon
                   img.icon__image(src="img/icon_design_white.png" alt="デザインアイコン")
-            li.list__item(data-23500="transform: scale(1);opacity: 1;" data-25000="transform: scale(0);opacity: 0;")
-              a.link(href="work/work05/index.html" target="_blank")
+            //li.list__item(data-23500="transform: scale(1);opacity: 1;" data-25000="transform: scale(0);opacity: 0;")
+            li.list__item
+              //a.link(href="work/work05/index.html" target="_blank")
                 p.work_title あかさたなぞるくん
                 p.icon
                   img.icon__image(src="img/icon_program_white.png" alt="コーディングアイコン")
-      section#contact.section.sec05(data-21500="top:100%;" data-27000="top: 0%;")
+              span.link
+                p.work_title あかさたなぞるくん
+                p.icon
+                  img.icon__image(src="img/icon_program_white.png" alt="コーディングアイコン")
+        .overlay
+          .overlay__content.clearfix#works05
+            iframe.pdf_frame(src="img/akasatana_tejun.pdf#zoom=46" frameborder="0")
+          .overlay__close 閉じる
+      //section#contact.section.sec05(data-21500="top:100%;" data-27000="top: 0%;")
         h2.heading2
           span(data-23500="opacity: 0;" data-26500="opacity: 1;") CONTACT
     script(src="js/vendor/skrollr.min.js")

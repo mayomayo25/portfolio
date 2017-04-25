@@ -33,9 +33,13 @@
             <li class="list__item indent"><a class="link works_link clearfix" href="#works">
                 <p class="icon"><span class="arrow_right"></span><img class="icon__image" src="img/icon01.png" alt="フォルダアイコン"></p>
                 <p class="file_name">works</p></a></li>
-            <li class="list__item indent"><a class="link contact_link clearfix" href="#contact">
-                <p class="icon"><span class="arrow_right"></span><img class="icon__image" src="img/icon01.png" alt="フォルダアイコン"></p>
-                <p class="file_name">contact</p></a></li>
+            <!--li.list__item.indent
+            a.link.contact_link.clearfix(href="#contact")
+              p.icon
+                span.arrow_right
+                img.icon__image(src="img/icon01.png" alt="フォルダアイコン")
+              p.file_name contact
+            -->
           </ul>
         </div>
         <div class="code">
@@ -47,7 +51,7 @@
             <pre><code class="javascript hljs"><span class="comment">/* --------------------------------------
 --- Welcome to my portfolio site.
 --- This page was written by DaichiSeki.
---- Please scroll!!!
+--- Please scroll down!!!
 -------------------------------------- */</span></code><code class="hljs" id="code"> 
  
 var profileArray = new Array();
@@ -63,6 +67,7 @@ console.log("My name is "+ profileArray["name"] +".");
 console.log("I was born in "+ pref +" on "+ birth +".");
  
 console.log("Thank you!!");</code></pre>
+            <div class="scroll_word blinking">Please scroll down!!</div>
           </div>
         </div>
         <div class="global_menu clearfix" id="global_menu">
@@ -72,7 +77,8 @@ console.log("Thank you!!");</code></pre>
             <li class="right_list__item"><a class="link about_link" href="#about">ABOUT</a></li>
             <li class="right_list__item"><a class="link skills_link" href="#skills">SKILLS</a></li>
             <li class="right_list__item"><a class="link works_link" href="#works">WORKS</a></li>
-            <li class="right_list__item"><a class="link contact_link" href="#contact">CONTACT</a></li>
+            <!--li.right_list__itema.link.contact_link(href="#contact") CONTACT
+            -->
           </ul>
         </div>
       </section>
@@ -82,7 +88,7 @@ console.log("Thank you!!");</code></pre>
           <div class="content__left" data-8000="opacity:0;" data-9800="opacity:1;"><img class="image" src="img/prof_image01.jpg" alt="プロフィール画像"></div>
           <div class="content__right" data-8000="transform:translate(130%,0);opacity:0;" data-9800="transform:translate(0%,0);opacity:1;">
             <h3 class="heading3">関 大智 -Seki Daichi-</h3>
-            <p class="sentence">HAL名古屋WEB開発学科3年の学生です。<br>趣味は旅行とサッカー観戦。<br>昨年の7月末には、台湾を10日間で一周しました。<br><br>興味のある分野としてはフロントエンドの技術です。<br>最近はコーディングをしている時に幸せを感じます。</p>
+            <p class="sentence">HAL名古屋WEB開発学科4年の学生です。<br>趣味は旅行とサッカー観戦。<br>昨年の7月末には、台湾を10日間で一周しました。<br><br>興味のある分野としてはフロントエンドの技術です。<br>最近はコーディングをしている時に幸せを感じます。</p>
           </div>
         </div>
       </section>
@@ -119,31 +125,56 @@ console.log("Thank you!!");</code></pre>
           </ul>
         </div>
       </section>
-      <section class="section sec04" id="works" data-16500="top:100%;" data-20500="top: 0%;" data-21500="top:0%;" data-27000="top: -100%;">
+      <!--section#works.section.sec04(data-16500="top:100%;" data-20500="top: 0%;" data-21500="top:0%;" data-27000="top: -100%;")-->
+      <section class="section sec04" id="works" data-16500="top:100%;" data-20500="top: 0%;">
         <h2 class="heading2"><span data-17500="opacity: 0;" data-20500="opacity: 1;">WORKS</span></h2>
         <div class="content" data-18500="opacity:0;" data-20500="opacity:1;">
           <ul class="list">
-            <li class="list__item" data-21500="transform: scale(1);opacity: 1;" data-23000="transform: scale(0);opacity: 0;"><a class="link" href="work/work01/index.html" target="_blank">
+            <!--li.list__item(data-21500="transform: scale(1);opacity: 1;" data-23000="transform: scale(0);opacity: 0;")-->
+            <li class="list__item"><a class="link" href="work/work01/index.html" target="_blank">
                 <p class="work_title">HAL幼稚園</p>
-                <p class="icon"><img class="icon__image" src="img/icon_program_white.png" alt="コーディングアイコン"></p></a></li>
-            <li class="list__item" data-22000="transform: scale(1);opacity: 1;" data-23500="transform: scale(0);opacity: 0;"><a class="link" href="work/work02/docs/index.html" target="_blank">
+                <p class="icon"><img class="icon__image" src="img/icon_program_white.png" alt="コーディングアイコン"></p></a>
+              <!--span.link
+              p.work_title HAL幼稚園
+              p.icon
+                img.icon__image(src="img/icon_program_white.png" alt="コーディングアイコン")
+              -->
+            </li>
+            <!--li.list__item(data-22000="transform: scale(1);opacity: 1;" data-23500="transform: scale(0);opacity: 0;")-->
+            <li class="list__item"><a class="link" href="work/work02/docs/index.html" target="_blank">
                 <p class="work_title">社歌PRO</p>
                 <p class="icon"><img class="icon__image" src="img/icon_program_white.png" alt="コーディングアイコン"></p></a></li>
-            <li class="list__item" data-22500="transform: scale(1);opacity: 1;" data-24000="transform: scale(0);opacity: 0;"><a class="link" href="work/work03/work03.png" target="_blank">
+            <!--li.list__item(data-22500="transform: scale(1);opacity: 1;" data-24000="transform: scale(0);opacity: 0;")-->
+            <li class="list__item"><a class="link" href="work/work03/work03.png" target="_blank">
                 <p class="work_title">CafeDePARIS</p>
                 <p class="icon"><img class="icon__image" src="img/icon_design_white.png" alt="デザインアイコン"></p></a></li>
-            <li class="list__item" data-23000="transform: scale(1);opacity: 1;" data-24500="transform: scale(0);opacity: 0;"><a class="link" href="work/work04/work04.png" target="_blank">
+            <!--li.list__item(data-23000="transform: scale(1);opacity: 1;" data-24500="transform: scale(0);opacity: 0;")-->
+            <li class="list__item"><a class="link" href="work/work04/work04.png" target="_blank">
                 <p class="work_title">Cuillere</p>
                 <p class="icon"><img class="icon__image" src="img/icon_design_white.png" alt="デザインアイコン"></p></a></li>
-            <li class="list__item" data-23500="transform: scale(1);opacity: 1;" data-25000="transform: scale(0);opacity: 0;"><a class="link" href="work/work05/index.html" target="_blank">
+            <!--li.list__item(data-23500="transform: scale(1);opacity: 1;" data-25000="transform: scale(0);opacity: 0;")-->
+            <li class="list__item">
+              <!--a.link(href="work/work05/index.html" target="_blank")
+              p.work_title あかさたなぞるくん
+              p.icon
+                img.icon__image(src="img/icon_program_white.png" alt="コーディングアイコン")
+              --><span class="link">
                 <p class="work_title">あかさたなぞるくん</p>
-                <p class="icon"><img class="icon__image" src="img/icon_program_white.png" alt="コーディングアイコン"></p></a></li>
+                <p class="icon"><img class="icon__image" src="img/icon_program_white.png" alt="コーディングアイコン"></p></span>
+            </li>
           </ul>
         </div>
+        <div class="overlay">
+          <div class="overlay__content clearfix" id="works05">
+            <iframe class="pdf_frame" src="img/akasatana_tejun.pdf#zoom=46" frameborder="0"></iframe>
+          </div>
+          <div class="overlay__close">閉じる</div>
+        </div>
       </section>
-      <section class="section sec05" id="contact" data-21500="top:100%;" data-27000="top: 0%;">
-        <h2 class="heading2"><span data-23500="opacity: 0;" data-26500="opacity: 1;">CONTACT</span></h2>
-      </section>
+      <!--section#contact.section.sec05(data-21500="top:100%;" data-27000="top: 0%;")
+      h2.heading2
+        span(data-23500="opacity: 0;" data-26500="opacity: 1;") CONTACT
+      -->
     </div>
     <script src="js/vendor/skrollr.min.js"></script>
     <script src="js/main.js"></script>

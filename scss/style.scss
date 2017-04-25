@@ -5,6 +5,7 @@
 
 @import "include/mixin";
 @import "include/variables";
+@import "include/keyframe";
 
 
 @font-face {
@@ -116,7 +117,7 @@ body {
     .code {
         position: absolute;
         left: 200px; //  .sideのwidth
-        width: 100%;
+        width: calc(100% - 200px);
         height: 100%;
         font-size: 14px;
         line-height: 1.8;
@@ -171,7 +172,27 @@ body {
 
             code {
                 padding: 0;
+
+				.cursor {
+					color: #4292d2;
+				}
             }
+
+			.scroll_word {
+				z-index: 99;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				width: 600px;
+				height: 200px;
+				margin: auto;
+				line-height: 200px;
+				text-align: center;
+				font-size: 50px;
+				color: #777;
+			}
         }
     }//  .code
 
@@ -380,6 +401,7 @@ body {
 
 				&:hover {
 					cursor: pointer;
+					background-color: #222;
 					.icon {
 						transform: scale(1.2);
 					}
@@ -411,9 +433,67 @@ body {
 			}//  .list__item
 		}//  .list
 	}//  .content
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: 0;
+		width: 100%;
+
+		&__content {
+			display: none;
+			width: 900px;
+			height: 600px;
+			margin: 20vh auto 0 auto;
+			border-radius: 20px;
+			background-color: #fafafa;
+
+			.pdf_frame {
+				width: 800px;
+				height: 550px;
+				margin: 25px 50px;
+			}
+		}
+
+		&__close {
+			display: none;
+			width: 200px;
+			height: 70px;
+			margin: 20px auto 0 auto;
+			line-height: 70px;
+			text-align: center;
+			background-color: #ff7c7c;
+			color: #fff;
+		}
+	}
+
+	//  keyframeの呼び出し
+	//  javascriptでクラス付与
+	.a_overlay {
+		-webkit-animation: a_overlay 0.8s ease 0s 1 normal;
+		animation: a_overlay 0.8s ease 0s 1 normal;
+		animation-fill-mode: forwards;
+	}
+	.b_overlay {
+		-webkit-animation: b_overlay 0.8s ease 0s 1 normal;
+		animation: b_overlay 0.8s ease 0s 1 normal;
+		animation-fill-mode: forwards;
+	}
 }//  .sec04
 
 
+
+// 非表示
+.d_none {
+	display: none;
+}
+// 表示
+.d_block {
+	display: block;
+}
 
 //  下向き矢印
 .arrow_down{
@@ -457,4 +537,11 @@ body {
     position: absolute;
     top: -9px;
     left: 5px;
+}
+
+//  点滅させる
+.blinking{
+	-webkit-animation:blink 1.0s ease-in-out infinite alternate;
+    -moz-animation:blink 1.0s ease-in-out infinite alternate;
+    animation:blink 1.0s ease-in-out infinite alternate;
 }
